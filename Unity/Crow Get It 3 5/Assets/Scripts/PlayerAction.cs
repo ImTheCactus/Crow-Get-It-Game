@@ -11,6 +11,11 @@ public class PlayerAction : MonoBehaviour
         mAnimator = GetComponent<Animator>();
     }
 
+    float idleTimer = 0f;
+    bool isIdle = true;
+
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -34,6 +39,32 @@ public class PlayerAction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.D))
             {
                 mAnimator.SetTrigger("BeginWalking");
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                mAnimator.SetTrigger("StartJump");
+            }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                mAnimator.SetTrigger("IsPeck");
+            }
+
+            if (Input.anyKey)
+            {
+                idleTimer = 0f;
+                isIdle = false;
+            }
+            else
+            {
+                idleTimer += Time.deltaTime;
+                if (idleTimer >= 2f && !isIdle)
+                {
+                    // Play idle animation
+
+                    mAnimator.SetTrigger("IsIdle");
+                }
             }
         }
     }
