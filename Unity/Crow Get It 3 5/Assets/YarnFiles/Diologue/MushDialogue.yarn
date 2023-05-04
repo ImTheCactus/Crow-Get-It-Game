@@ -1,0 +1,46 @@
+﻿title: MushDialogue
+---
+<<if visited("MushDialogue") is false>>
+    <<set $FindingFruit to false>>
+    <<set $FruitFound to false>>
+
+    Mush: Hi, Im Mush
+    Player: Hi Mush
+<<else>>
+    Mush: Hi again
+<<endif>>
+
+<<if $FruitFound is false>>
+    <<jump MushQuest>>
+<<else>>
+    <<jump MushFruitFound>>
+<<endif>>
+===
+
+title: MushQuest
+---
+<<if $FindingFruit is false>>
+    Mush: Put Quest script here
+    <<set $FindingFruit to true>>
+
+<<else>>
+    Mush: Put more dialogue here
+
+<<endif>>
+// Option "I understand, thanks. " moved to the end of this node
+-> What fruit  <<if ($FindingFruit is false)>>
+    <<jump MushWhatFruit>>
+-> Where should I look  <<if !($FindingFruit is false)>>
+    <<jump MushWhereLook>>
+===
+title: MushWhatFruit
+---
+    Mush: I Like Peaches
+    <<jump MushQuest>>
+===
+
+title: MushWhereLook
+---
+    Mush: Idk bro
+    <<jump MushQuest>>
+===

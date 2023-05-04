@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: ac36705f65253ba428d92b3cbca2cae1
 ModelImporter:
-  serializedVersion: 22103
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
@@ -11,22 +11,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Raccoon_Dark_Fur
-    second: {fileID: 2100000, guid: d7fa4693bb8f4b444851b0c903d0ce31, type: 2}
+    second: {fileID: 2100000, guid: 186e70915ea84c5479227d9afb0f57bd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Raccoon_Eye
-    second: {fileID: 2100000, guid: 8ff94cc3819c51a4aa150e603c92e321, type: 2}
+    second: {fileID: 2100000, guid: a6bcdee7f3db1574aa3ee5b874a1ebc5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Raccoon_Light_Fur
-    second: {fileID: 2100000, guid: 2753bc0ea3b20a747930f57a99825089, type: 2}
+    second: {fileID: 2100000, guid: b0ad4ac9d4849424ba2eb5fac299e3ed, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Raccoon_Medium_Fur
-    second: {fileID: 2100000, guid: c6d159cbf9059114a84d77a320f3ede2, type: 2}
+    second: {fileID: 2100000, guid: ab7578a0f0388294b85b2e7f072c2518, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -119,7 +119,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -141,7 +140,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 100
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
@@ -152,7 +151,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

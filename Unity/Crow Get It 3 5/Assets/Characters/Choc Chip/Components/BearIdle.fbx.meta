@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 90a4b5cbd6e963843bd9f5a29eec6c07
 ModelImporter:
-  serializedVersion: 22103
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
@@ -11,17 +11,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bear_Belly
-    second: {fileID: 2100000, guid: 8b57bd4c1e0e7a64d9dc22c6ca1a7f3a, type: 2}
+    second: {fileID: 2100000, guid: 13fef12c0a49f6c40a8955d16f77dab5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bear_Fur
-    second: {fileID: 2100000, guid: 31317d8780f2d774a93c6f4a91f2b049, type: 2}
+    second: {fileID: 2100000, guid: ec310614fd6ada345aab2f7b6e04f01c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bear_Nose
-    second: {fileID: 2100000, guid: 0391a78914d84664eb4feb821b54f98b, type: 2}
+    second: {fileID: 2100000, guid: 29b7ae46330354f46bac2357361cd627, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -114,7 +114,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -147,7 +146,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

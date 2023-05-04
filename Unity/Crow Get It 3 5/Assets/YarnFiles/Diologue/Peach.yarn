@@ -1,0 +1,10 @@
+﻿title: Peach
+---
+<<if $FindingFruit is false>>
+Its a peach
+<<else>>
+Hey! This is what Mush wanted
+    <<set $FruitFound to true>>
+    <<hide >>
+<<endif>>
+===
