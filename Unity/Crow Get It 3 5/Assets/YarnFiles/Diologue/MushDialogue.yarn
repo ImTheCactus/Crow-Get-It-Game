@@ -27,8 +27,8 @@ title: MushQuest
     Mush: Put more dialogue here
 
 <<endif>>
-// Option "I understand, thanks. " moved to the end of this node
--> What fruit  <<if ($FindingFruit is false)>>
+
+-> What fruit  <<if !($FindingFruit is false)>>
     <<jump MushWhatFruit>>
 -> Where should I look  <<if !($FindingFruit is false)>>
     <<jump MushWhereLook>>
