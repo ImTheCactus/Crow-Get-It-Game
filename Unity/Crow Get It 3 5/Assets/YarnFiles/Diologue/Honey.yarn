@@ -1,0 +1,11 @@
+﻿title: Honey
+tags:
+---
+<<if $FindingHoney is false>>
+    Its some Honey
+<<else>>
+    Hey! This is what Chip wanted
+    <<set $HoneyFound to true>>
+    
+<<endif>>
+===

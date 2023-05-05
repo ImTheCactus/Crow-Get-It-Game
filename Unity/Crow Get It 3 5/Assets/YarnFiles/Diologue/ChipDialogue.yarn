@@ -1,5 +1,81 @@
 ﻿title: ChipDialogue
-tags:
----
 
+---
+<<if $FindingChip is false>>
+    ?: GGGGGRRRRRRRRRR
+    <<set $FindingHoney to false>>
+    <<jump ChipExitGrowl>>
+
+<<else>>
+    <<jump ChipIntro>>
+
+<<endif>>
+
+
+===
+title: ChipIntro
+---
+    Chip: oh Hi
+    Cawson: Hi, your friend said that you might need help with something
+    Chip: OH you know Mush?
+    Chip: Yeah I do need a bit of help
+    Chip: I really want some honey but I cant find any
+    Chip: Do you mind getting me some?
+    <<set $FindingHoney to true>>
+    <<set $HoneyFound to false>>
+
+<<if $HoneyFound is false>> 
+    <<jump ChipQuest>>
+<<else>>
+    <<jump ChipHoneyFound>>
+<<endif>>
+===
+title: ChipQuest
+---
+<<if $FindingHoney is true>>
+    Cawson: Yeah I can go get you some!
+    Chip: Great!
+    Chip: I think there is some near by. I can smell it!
+    <<set $FindingHoney to true>>
+
+<<else>>
+    Chip: Have you found any Honey yet?
+
+<<endif>>
+
+-> How do you know Mush?  <<if !($FindingHoney is false)>>
+    <<jump FriendMush>>
+-> Where should I look?  <<if !($FindingHoney is false)>>
+    <<jump ChipWhereLook>>
+-> I understand, thanks. 
+    <<jump ChipExit>>
+===
+title: FriendMush
+---
+    Chip: Well I helped them find some fruit
+    Chip: They are only small, but I can help by getting them off the trees
+    <<jump ChipQuest>>
+===
+
+title: ChipWhereLook
+---
+    Chip: Somewhere close I'm sure
+    <<jump MushQuest>>
+===
+title: ChipExit
+---
+    Chip: Good Luck!
+===
+
+title: ChipHoneyFound
+---
+    Chip: Oh you managed to get some!
+    Chip: Thats really cool
+    Chip: I might have something for you to do if you come back at a later version!
+    
+===
+
+title: ChipExitGrowl
+---
+?: GRR?
 ===

@@ -3,9 +3,13 @@
 <<if visited("MushDialogue") is false>>
     <<set $FindingFruit to false>>
     <<set $FruitFound to false>>
+    <<set $FindingChip to false>>
 
-    Mush: Hi, Im Mush
-    Player: Hi Mush
+    ?: Hello...
+    Player: Hi 
+    ?: Who are you?
+    Cawson: I'm Cawson, who are you?
+    Mush: I'm mush, you must be new here.
 <<else>>
     Mush: Hi again
 <<endif>>
@@ -20,27 +24,44 @@
 title: MushQuest
 ---
 <<if $FindingFruit is false>>
-    Mush: Put Quest script here
+    Mush: Hey while your here...
+    Mush: I'm looking for some fruit to eat, do you mind helping me find some?
     <<set $FindingFruit to true>>
 
 <<else>>
-    Mush: Put more dialogue here
+    Mush: Have you found any fruit yet?
 
 <<endif>>
 
--> What fruit  <<if !($FindingFruit is false)>>
+-> What kind of fruit are you looking for?  <<if !($FindingFruit is false)>>
     <<jump MushWhatFruit>>
--> Where should I look  <<if !($FindingFruit is false)>>
+-> Where should I look?  <<if !($FindingFruit is false)>>
     <<jump MushWhereLook>>
+-> I understand, thanks. 
+    <<jump MushExit>>
 ===
 title: MushWhatFruit
 ---
-    Mush: I Like Peaches
+    Mush: Well any kind really
+    Mush: But I do really like peaches
     <<jump MushQuest>>
 ===
 
 title: MushWhereLook
 ---
-    Mush: Idk bro
+    Mush: How would I know?
     <<jump MushQuest>>
+===
+title: MushExit
+---
+    Mush: Cya
+===
+
+title: MushFruitFound
+---
+    Mush: Hey! You actually found one!
+    Mush: And its a peach too!
+    Mush: Hey you know if you like helping people you should go find Chip.
+    Mush: He's a good friend of mine but often needs help with little things
+    <<set $FindingChip to true>>
 ===
