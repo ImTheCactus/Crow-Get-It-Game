@@ -15,16 +15,19 @@
 ===
 title: ChipIntro
 ---
+    
+
+<<if $HoneyFound is false>> 
     Chip: oh Hi
     Cawson: Hi, your friend said that you might need help with something
     Chip: OH you know Mush?
     Chip: Yeah I do need a bit of help
     Chip: I really want some honey but I cant find any
     Chip: Do you mind getting me some?
+    Cawson: Yeah I can go get you some!
+    Chip: Great!
     <<set $FindingHoney to true>>
     <<set $HoneyFound to false>>
-
-<<if $HoneyFound is false>> 
     <<jump ChipQuest>>
 <<else>>
     <<jump ChipHoneyFound>>
@@ -33,10 +36,9 @@ title: ChipIntro
 title: ChipQuest
 ---
 <<if $FindingHoney is true>>
-    Cawson: Yeah I can go get you some!
-    Chip: Great!
+    
     Chip: I think there is some near by. I can smell it!
-    <<set $FindingHoney to true>>
+    
 
 <<else>>
     Chip: Have you found any Honey yet?
@@ -60,7 +62,7 @@ title: FriendMush
 title: ChipWhereLook
 ---
     Chip: Somewhere close I'm sure
-    <<jump MushQuest>>
+    <<jump ChipQuest>>
 ===
 title: ChipExit
 ---
