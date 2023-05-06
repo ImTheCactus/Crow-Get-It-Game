@@ -4,6 +4,7 @@
     Its a peach
 <<else>>
     Hey! This is what Mush wanted
+    PEACH COLLECTED
     <<set $FruitFound to true>>
     
 <<endif>>
