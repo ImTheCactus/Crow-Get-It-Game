@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TEST Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Ctrl_Group
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_L/Controller_Elbow_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_L/ikHandle_Foot_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_L/ikHandle_Leg_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_R
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_R/Controller_Elbow_R
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_R/ikHandle_Foot_R
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Foot_R/ikHandle_Leg_R
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Neck
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Neck/Controller_AllBeak
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Neck/Controller_AllBeak/Controller_Beak
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Pelvis
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Pelvis/Controller_Tail
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_L/Controller_Elbow_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_L/ikHandle_Wing_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_L/ikHandle_Wing_Tip_L
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_R
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_R/Controller_Elbow_R
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_R/ikHandle_Wing_R
+    m_Weight: 0
+  - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_R/ikHandle_Wing_Tip_R
+    m_Weight: 0
+  - m_Path: Joint_Group
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Neck
+    m_Weight: 1
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Neck/joint_Beak_Base
+    m_Weight: 1
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Neck/joint_Beak_Base/joint_Beak_Bottom_Base
+    m_Weight: 1
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Neck/joint_Beak_Base/joint_Beak_Bottom_Base/joint_Beak_Bottom
+    m_Weight: 1
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Neck/joint_Beak_Base/joint_Beak_Top
+    m_Weight: 1
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L/joint_Hallux_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L/joint_Knuckle1_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L/joint_Knuckle1_L/joint_Toe1_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L/joint_Knuckle2_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L/joint_Knuckle2_L/joint_Toe2_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L/joint_Knuckle3_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_L/joint_Ankle_L/joint_Hypotarsus_L/joint_Knuckle3_L/joint_Toe3_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R/joint_Hallux_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R/joint_Knuckle1_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R/joint_Knuckle1_R/joint_Toe1_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R/joint_Knuckle2_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R/joint_Knuckle2_R/joint_Toe2_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R/joint_Knuckle3_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Patella_R/joint_Ankle_R/joint_Hypotarsus_R/joint_Knuckle3_R/joint_Toe3_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_L/joint_Elbow_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_L/joint_Elbow_L/joint_Carpals_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_L/joint_Elbow_L/joint_Carpals_L/joint_Manus_L
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_R/joint_Elbow_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_R/joint_Elbow_R/joint_Carpals_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Spine/joint_Shoulder_R/joint_Elbow_R/joint_Carpals_R/joint_Manus_R
+    m_Weight: 0
+  - m_Path: Joint_Group/joint_Pelvis/joint_Tail
+    m_Weight: 0
+  - m_Path: Mesh_Group
+    m_Weight: 0
+  - m_Path: Mesh_Group/BackpackMesh
+    m_Weight: 0
+  - m_Path: Mesh_Group/BackpackMesh/BackpackBody
+    m_Weight: 0
+  - m_Path: Mesh_Group/BackpackMesh/BackpackStraps
+    m_Weight: 0
+  - m_Path: Mesh_Group/CrowBody
+    m_Weight: 0
