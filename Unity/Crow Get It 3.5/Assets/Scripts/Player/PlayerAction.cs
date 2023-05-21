@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerAction : MonoBehaviour
 {
@@ -19,6 +21,8 @@ public class PlayerAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         if (mAnimator != null)
         {
             if (Input.GetKeyDown(KeyCode.W))

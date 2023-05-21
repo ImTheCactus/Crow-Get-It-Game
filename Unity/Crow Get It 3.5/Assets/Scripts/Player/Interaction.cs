@@ -4,6 +4,8 @@ using UnityEngine;
 //using Yarn.Unity.Example;
 using Yarn.Unity;
 using GAD375.Prototyper;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace GAD375.Prototyper
 {
@@ -43,6 +45,11 @@ namespace GAD375.Prototyper
             if (Input.GetKeyDown(interactKey)) 
             {
                 TryInteract();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("MainMenu");
             }
 #endif
         }
