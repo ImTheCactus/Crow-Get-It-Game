@@ -1,118 +1,128 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed;
+    //Variables:
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float walkSpeed;
+    private Vector3 moveDirection;
+    private Vector3 velocity;
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private float groundCheckDistance;
+    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private float gravity;
+    [SerializeField] private float jumpHeight;
+    private Rigidbody rb; //TEST
 
-    public float groundDrag;
-
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
-    bool readyToJump;
-
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
-
-    [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
-
-    [Header("Ground Check")]
-    public float playerHeight;
-    public LayerMask whatIsGround;
-    bool grounded;
-
-    public Transform orientation;
-
-    float horizontalInput;
-    float verticalInput;
-
-    Vector3 moveDirection;
-
-    Rigidbody rb;
+    //References:
+    private CharacterController controller;
+    private Animator anim;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
-
-        readyToJump = true;
+        rb = GetComponent<Rigidbody>(); //TEST
+        controller = GetComponent<CharacterController>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     private void Update()
     {
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        Move();
 
-        MyInput();
-        SpeedControl();
-
-        // handle drag
-        if (grounded)
-            rb.drag = groundDrag;
-        else
-            rb.drag = 0;
-    }
-
-    private void FixedUpdate()
-    {
-        MovePlayer();
-    }
-
-    private void MyInput()
-    {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
-
-        // when to jump
-        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            readyToJump = false;
+            StartCoroutine(Attack());
+        }
+    }
 
+    private void Move()
+    {
+        isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
+        
+        if(isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
+        float moveZ = Input.GetAxis("Vertical");
+        float moveX = Input.GetAxis("Horizontal");
+        moveDirection = new Vector3(moveX * moveSpeed, moveDirection.y, moveZ * moveSpeed);
+        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection *= walkSpeed;
+
+        if(isGrounded == true)
+        {
+            if (moveDirection != Vector3.zero)
+            {
+                Walk();
+            }
+
+            else if (moveDirection == Vector3.zero)
+            {
+                Idle();
+            }
+
+            moveDirection *= moveSpeed;
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                Jump();
+            }
+        }
+        controller.Move(moveDirection * Time.deltaTime);
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+
+        /*if (moveDirection != Vector3.zero)
+        {
+            Walk();
+        }
+
+        else if (moveDirection == Vector3.zero)
+        {
+            Idle();
+        }
+
+        moveDirection *= moveSpeed;
+
+        if (Input.GetKey(KeyCode.Space))
+        {
             Jump();
-
-            Invoke(nameof(ResetJump), jumpCooldown);
         }
+
+        controller.Move(moveDirection * Time.deltaTime);
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);*/
     }
 
-    private void MovePlayer()
+
+    private void Idle()
     {
-        // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
-        // on ground
-        if(grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
-        // in air
-        else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        isGrounded = true;
+        anim.SetFloat("Speed", 0f, 0.1f, Time.deltaTime);
     }
-
-    private void SpeedControl()
+    private void Walk()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
-        // limit velocity if needed
-        if(flatVel.magnitude > moveSpeed)
-        {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
-        }
+        isGrounded = true;
+        moveSpeed = walkSpeed;
+        anim.SetFloat("Speed", 1f, 0.1f, Time.deltaTime);
     }
 
     private void Jump()
     {
-        // reset y velocity
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        isGrounded = true;
+        anim.SetTrigger("IsGrounded");
+        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        isGrounded = false;
     }
-    private void ResetJump()
+
+    private IEnumerator Attack()
     {
-        readyToJump = true;
+        anim.SetLayerWeight(anim.GetLayerIndex("Attack Layer"), 1);
+        anim.SetTrigger("Attack");
+        yield return new WaitForSeconds(0.9f);
+        anim.SetLayerWeight(anim.GetLayerIndex("Attack Layer"), 0);
     }
 }
