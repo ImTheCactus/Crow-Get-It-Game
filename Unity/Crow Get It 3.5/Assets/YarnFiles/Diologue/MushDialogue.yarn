@@ -25,7 +25,7 @@ title: MushQuest
 ---
 <<if $FindingFruit is false>>
     Mush: Hey while your here...
-    Mush: I'm looking for some fruit to eat, do you mind helping me find some?
+    Mush: I'm looking for some fruit, do you mind helping me find some?
     <<set $FindingFruit to true>>
 
 <<else>>
@@ -42,26 +42,26 @@ title: MushQuest
 ===
 title: MushWhatFruit
 ---
-    Mush: Well any kind really
-    Mush: But I do really like peaches
+    Mush: Well I like any fruit, cant be picky...
+    Mush: But I do really like peaches!
     <<jump MushQuest>>
 ===
 
 title: MushWhereLook
 ---
-    Mush: How would I know?
+    Mush: oh, um, maybe you can spot one from the path?
     <<jump MushQuest>>
 ===
 title: MushExit
 ---
-    Mush: Cya
+    Mush: oh okay, bye
 ===
 
 title: MushFruitFound
 ---
-    Mush: Hey! You actually found one!
-    Mush: And its a peach too!
-    Mush: Hey you know if you like helping people you should go find Chip.
-    Mush: He's a good friend of mine but often needs help with little things
+    Mush: Hey you found one!
+    Mush: and it's my favorite!
+    Mush: You've been so helpful, my friend Chip could sure use your help.
+    Mush: She looks scary but shes very forgetful, even if crows were tasty she wouldn't remember that.
     <<set $FindingChip to true>>
 ===
