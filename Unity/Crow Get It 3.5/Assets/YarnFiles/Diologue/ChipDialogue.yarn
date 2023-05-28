@@ -18,14 +18,14 @@ title: ChipIntro
     
 
 <<if $HoneyFound is false>> 
-    Chip: oh Hi
-    Cawson: Hi, your friend said that you might need help with something
-    Chip: OH you know Mush?
-    Chip: Yeah I do need a bit of help
-    Chip: I really want some honey but I cant find any
-    Chip: Do you mind getting me some?
+    Chip: Hello!
+    Cawson: Hello, your friend Mush said that you need help with something
+    Chip: Oh you know Mush do you dear?
+    Chip: Now that you bring it up, I do want some honey.
+    Chip: But it seems I can't remember where the hive was?
+    Chip: Do you mind getting me some? It has to be around here somewhere...
     Cawson: Yeah I can go get you some!
-    Chip: Great!
+    Chip: Oh thankyou sweet!
     <<set $FindingHoney to true>>
     <<set $HoneyFound to false>>
     <<jump ChipQuest>>
@@ -37,7 +37,7 @@ title: ChipQuest
 ---
 <<if $FindingHoney is true>>
     
-    Chip: I think there is some near by. I can smell it!
+    Chip: Maybe if you backtrack down the path you might find it!
     
 
 <<else>>
@@ -49,19 +49,19 @@ title: ChipQuest
     <<jump FriendMush>>
 -> Where should I look?  <<if !($FindingHoney is false)>>
     <<jump ChipWhereLook>>
--> I understand, thanks. 
+-> Thats okay, thanks. 
     <<jump ChipExit>>
 ===
 title: FriendMush
 ---
-    Chip: Well I helped them find some fruit
-    Chip: They are only small, but I can help by getting them off the trees
+    Chip: I brought them a peach.
+    Chip: They're only small, but I can help by getting them off the trees
     <<jump ChipQuest>>
 ===
 
 title: ChipWhereLook
 ---
-    Chip: Somewhere close I'm sure
+    Chip: Maybe if you backtrack down the hill you'll find some.
     <<jump ChipQuest>>
 ===
 title: ChipExit
@@ -71,8 +71,8 @@ title: ChipExit
 
 title: ChipHoneyFound
 ---
-    Chip: Oh you managed to get some!
-    Chip: Thats really cool
+    Chip: You must have honey on you I can smell it!
+    Chip: Thankyou so much deer.
     Chip: I might have something for you to do if you come back at a later version!
     
 ===
