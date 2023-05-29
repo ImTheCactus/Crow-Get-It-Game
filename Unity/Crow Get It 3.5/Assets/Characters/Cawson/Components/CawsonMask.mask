@@ -6,7 +6,7 @@ AvatarMask:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TEST Mask
+  m_Name: CawsonMask
   m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   m_Elements:
   - m_Path: 
@@ -58,7 +58,7 @@ AvatarMask:
   - m_Path: Ctrl_Group/Controller_Global/Controller_Wing_R/ikHandle_Wing_Tip_R
     m_Weight: 0
   - m_Path: Joint_Group
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Joint_Group/joint_Pelvis
     m_Weight: 0
   - m_Path: Joint_Group/joint_Pelvis/joint_Spine

@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float gravity;
     [SerializeField] private float jumpHeight;
-    private Rigidbody rb; //TEST
+    private Rigidbody rb;
 
     //References:
     private CharacterController controller;
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>(); //TEST
+        rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
     }
@@ -74,27 +74,6 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(moveDirection * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
-        /*if (moveDirection != Vector3.zero)
-        {
-            Walk();
-        }
-
-        else if (moveDirection == Vector3.zero)
-        {
-            Idle();
-        }
-
-        moveDirection *= moveSpeed;
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Jump();
-        }
-
-        controller.Move(moveDirection * Time.deltaTime);
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);*/
     }
 
 
