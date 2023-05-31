@@ -49,7 +49,8 @@ namespace GAD375.Prototyper
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene("MainMenu");
+                //SceneManager.LoadScene("MainMenu");
+                Application.Quit();
             }
 #endif
         }
