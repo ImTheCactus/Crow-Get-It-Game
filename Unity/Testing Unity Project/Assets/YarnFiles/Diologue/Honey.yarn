@@ -1,0 +1,12 @@
+﻿title: Honey
+tags:
+---
+<<if $FindingHoney is false>>
+    Its some Honey
+<<else>>
+    Hey! This is what Chip wanted
+    HONEY COLLECTED
+    <<set $HoneyFound to true>>
+    <<hide Peach self>>
+<<endif>>
+===

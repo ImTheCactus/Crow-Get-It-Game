@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: c6816f3ae8778204fb41986092a6b9c3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 053561912b1654d80a424bb0696a74ae, type: 3}
+  sourceScripts:
+  - {fileID: 6391573757903218779, guid: 3708c9003fb5e8f40b111be22b9426ba, type: 3}
+  - {fileID: 6391573757903218779, guid: 16a9a97b823b07340a6e9985c61608d1, type: 3}
+  - {fileID: 6391573757903218779, guid: 10d4845dceb722847ae7e27d49b66c22, type: 3}
+  - {fileID: 6391573757903218779, guid: 6cad23578ddd1c34892cd703effdd943, type: 3}
+  - {fileID: 6391573757903218779, guid: e59be3ae89a7fe746846e580ed4a97b1, type: 3}
+  compileErrors: []
+  serializedDeclarations:
+  - name: $FindingFruit
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in MushDialogue.yarn, node MushDialogue
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 16a9a97b823b07340a6e9985c61608d1,
+      type: 3}
+  - name: $FruitFound
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in MushDialogue.yarn, node MushDialogue
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 16a9a97b823b07340a6e9985c61608d1,
+      type: 3}
+  - name: $FindingChip
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in ChipDialogue.yarn, node ChipDialogue
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 6cad23578ddd1c34892cd703effdd943,
+      type: 3}
+  - name: $FindingHoney
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in ChipDialogue.yarn, node ChipDialogue
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 6cad23578ddd1c34892cd703effdd943,
+      type: 3}
+  - name: $HoneyFound
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in ChipDialogue.yarn, node ChipDialogue
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 6cad23578ddd1c34892cd703effdd943,
+      type: 3}
+  defaultLanguage: en-AU
+  languagesToSourceAssets: []
+  useAddressableAssets: 0
+  searchAllAssembliesForActions: 1
+  assembliesToSearch: []
+  ListOfFunctions:
+  - Name: Random
+    ReturnType: -> Single
+    Parameters: []
+  - Name: RandomRange
+    ReturnType: -> Single
+    Parameters:
+    - minInclusive
+    - maxInclusive
+  - Name: Dice
+    ReturnType: -> Int32
+    Parameters:
+    - sides
+  - Name: Round
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: RoundPlaces
+    ReturnType: -> Single
+    Parameters:
+    - num
+    - places
+  - Name: Floor
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Ceil
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Inc
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Dec
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Decimal
+    ReturnType: -> Single
+    Parameters:
+    - num
+  - Name: Int
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: CoolFunction
+    ReturnType: -> Int32
+    Parameters: []
