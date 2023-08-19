@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 05ba0a0c123f8d249b17d1a2bf2b8865
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fpCamera: {fileID: 8748878667094997783, guid: 7ab9ecbaaa3386a49b1c7cedf4d1a3cb,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

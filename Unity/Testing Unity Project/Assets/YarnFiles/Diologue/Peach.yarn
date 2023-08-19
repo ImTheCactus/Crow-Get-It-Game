@@ -6,7 +6,7 @@
     Hey! This is what Mush wanted
     PEACH COLLECTED
     <<set $FruitFound to true>>
-        <<hide Peach self>>
+    <<hide Peach self>>
 
 <<endif>>
 ===
