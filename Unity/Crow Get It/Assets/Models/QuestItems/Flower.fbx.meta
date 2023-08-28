@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e084a8e818a98f9449ac31e28cdd7692
+guid: 5a704d9820e24a442a2c28c4ebd4b4e1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,28 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FlatGlowShroom_Mat
-    second: {fileID: 2100000, guid: caf070d50beca6e44957b1790f1533fb, type: 2}
+      name: QuestItem_Green_Mat
+    second: {fileID: 2100000, guid: 42be0350fbd89684aaadde83dc0338c4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mush_Stem_Mat
-    second: {fileID: 2100000, guid: 858955371d2f2ae46bc4f1850f192b65, type: 2}
+      name: QuestItem_Petal_Mat
+    second: {fileID: 2100000, guid: 5d05f16384ca9ca4a97ad3b6503bf7a9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: OakLeaf
-    second: {fileID: 2100000, guid: 829822bbc8a44f546b633c0fa8c837a7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: RoundedGlowShroom_Mat
-    second: {fileID: 2100000, guid: b44323a4b17b4aa4da3b3b945bbed449, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pasted__Rocks_Mat
-    second: {fileID: 2100000, guid: 4e1a7fbd683f0b64ea69ed376406405f, type: 2}
+      name: QuestItems_Pollen_Mat
+    second: {fileID: 2100000, guid: 9c51ec421d61f2049a2e2ab725edc67b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
