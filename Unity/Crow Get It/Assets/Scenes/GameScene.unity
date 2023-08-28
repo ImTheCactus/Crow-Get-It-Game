@@ -677,6 +677,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 101991255}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &143855890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3315260297253161855, guid: 08ba017ef658289479f142f0a153f54c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3315260296567735271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &183143491 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4700466679542103043, guid: 7526e08f43a8b474f9574687958836cc,
@@ -1550,7 +1556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313476675}
   m_Layer: 0
-  m_Name: bruh edits
+  m_Name: FarmFences
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1563,8 +1569,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313476674}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.852547, y: -45.25135, z: 147.68555}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.487453, y: -19.71035, z: 219.87555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1572,8 +1578,8 @@ Transform:
   - {fileID: 2007706252}
   - {fileID: 651447358}
   - {fileID: 1506541408}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 143855890}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &345531017
 PrefabInstance:
