@@ -1,0 +1,12 @@
+﻿title: Firefly
+tags:
+---
+<<if $FindingFirefly is false>>
+    The Firefly buzzes softly in the air
+<<else>>
+    This is what Raph wanted
+    FIREFLY COLLECTED
+    <<set $FireflyFound to true>>
+
+<<endif>>
+===

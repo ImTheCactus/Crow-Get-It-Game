@@ -1,0 +1,54 @@
+﻿title: WillowDialogue
+tags:
+---
+<<if visited("WillowDialogue") is false>>
+    <<set $FindingBerry to false>>
+    <<set $BerryFound to false>>
+
+    ?: Hello! Hello! How are you! What are you up to! Are you having a good day!
+    Cawson: Hello I’m Cawson who are you? 
+    Willow: I’m willow! Like the tree!
+    I was looking for something but got distracted by this pretty arrangement of stones!
+
+    -> What were you looking for?
+    <<jump WillowQuest>>
+
+    -> Yeah, the stones are cool.
+    <<jump BubblesEnd>>
+
+    -> Okay
+    <<jump BubblesEnd>>
+
+
+<<else>>
+    Willow: Hi again
+<<endif>>
+
+<<if $BerryFound is false>>
+    <<jump WillowQuest>>
+<<else>>
+    <<jump WillowUrchinFound>>
+<<endif>>
+===
+
+title: WillowQuest
+---
+<<if $FindingBerry is false>>
+    Willow: Oh, I was look for these pretty berries
+    Willow: I Love the colour of them and they’re the sweetest berries I ever tasted!
+<<else>>
+    Willow: Find anything yet?
+<<endif>>
+===
+
+title: WillowBerryFound
+---
+Willow: MMMM delicious! Just like I remember! Thank you so much!
+I might have something for you if you come back later.
+
+===
+
+title: WillowEnd
+---
+Willow: If you wanna come back and say hi I'll be here under my tree
+===

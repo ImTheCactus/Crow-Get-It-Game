@@ -1,0 +1,12 @@
+﻿title: Berry
+tags:
+---
+<<if $FindingBerry is false>>
+    Thats a cool colour
+<<else>>
+    Hey! This is what Willow wanted
+    BERRY COLLECTED
+    <<set $BerryFound to true>>
+
+<<endif>>
+===

@@ -1,0 +1,12 @@
+﻿title: Straw
+tags:
+---
+<<if $FindingStraw is false>>
+    This straw is really soft, I bet it would make good stuffing
+<<else>>
+    I can bring this back to the Scarecrow
+    STRAW COLLECTED
+    <<set $StrawFound to true>>
+
+<<endif>>
+===

@@ -1,0 +1,12 @@
+﻿title: Flower
+tags:
+---
+<<if $FindingFlower is false>>
+    mmmm that smells nice
+<<else>>
+    This is what Queenie wanted
+    FLOWER COLLECTED
+    <<set $FlowerFound to true>>
+
+<<endif>>
+===

@@ -1,0 +1,12 @@
+﻿title: Urchin
+tags:
+---
+<<if $FindingUrchin is false>>
+    That looks pointy
+<<else>>
+    This is what Bubbles wanted
+    URCHIN COLLECTED
+    <<set $UrchinFound to true>>
+
+<<endif>>
+===

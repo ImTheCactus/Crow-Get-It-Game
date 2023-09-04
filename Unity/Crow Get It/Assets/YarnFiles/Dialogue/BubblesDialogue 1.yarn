@@ -1,0 +1,63 @@
+﻿title: BubblesDialogue
+tags:
+---
+<<if visited("BubblesDialogue") is false>>
+    <<set $FindingUrchin to false>>
+    <<set $UrchinFound to false>>
+
+    ?: *Blublublublub* hm? *blublublublub*
+    ?: Oh sorry, I thought I heard something
+    Bubbles: I was too busy making bubbles, hence the name 
+    Bubbles: *blublub*! I’ve been trying to find some urchins to eat but with all these lily pads in the way I can’t get to them.
+
+    -> I can get them for you.
+    <<Jump >>
+    -> Why don’t you just get out of the water?
+    <<Jump >>
+
+
+<<else>>
+    Bubbles: Hi again
+<<endif>>
+
+<<if $UrchinFound is false>>
+    <<jump BubblesQuest>>
+<<else>>
+    <<jump BubblesUrchinFound>>
+<<endif>>
+===
+
+title: BubblesQuest
+---
+<<if $FindingUrchin is false>>
+    <<set $FindingUrchin to true>>
+    Wait really! You would do that! For me?! Oh, thank you thank you, thank you 
+    -> That’s okay.
+    <<jump BubblesEnd>>
+    -> Where can I find them?
+    <<jump WhereFindUrchin>>
+    -> Actually I dont really want to right now
+    
+    
+
+    
+<<else>>
+    Raph: Found anthing yet?
+<<endif>>
+===
+
+title: BubblesUrchinFound
+---
+You found one for me! Thankyou! *Blublub*
+===
+
+title: WhereFindUrchin
+---
+The urchins tend to be under the bridge near the cave but maybe they moved.
+    <<jump BubblesQuest>>
+===
+
+title: BubblesEnd
+---
+Bubbles: you know where to find me
+===

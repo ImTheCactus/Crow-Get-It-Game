@@ -1,0 +1,12 @@
+﻿title: Button
+tags:
+---
+<<if $FindingButton is false>>
+    A pair of buttons?
+<<else>>
+    These must be the Scarecrows eyes
+    BUTTONS COLLECTED
+    <<set $ButtonFound to true>>
+
+<<endif>>
+===
