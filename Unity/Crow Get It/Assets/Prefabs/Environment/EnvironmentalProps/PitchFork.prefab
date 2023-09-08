@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 50734753544729623}
   - component: {fileID: 2832985943648764125}
   - component: {fileID: 6154225609652446271}
+  - component: {fileID: 1362471661271551410}
   m_Layer: 0
   m_Name: PitchFork
   m_TagString: Untagged
@@ -99,3 +100,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7781293959752876575, guid: 5caada7e2981cad42bf01da1f7cded7a, type: 3}
+--- !u!205 &1362471661271551410
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346032758732333320}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0056910217, y: 0.29143447, z: -0.00000020861626}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.02
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -7511558181221131132, guid: 5caada7e2981cad42bf01da1f7cded7a,
+        type: 3}
+  m_Enabled: 1

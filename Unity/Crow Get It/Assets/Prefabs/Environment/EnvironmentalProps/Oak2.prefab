@@ -104,7 +104,6 @@ GameObject:
   - component: {fileID: 5183463381798147053}
   - component: {fileID: 5258209743868896825}
   - component: {fileID: 3427395020248627537}
-  - component: {fileID: 3427395020248627542}
   - component: {fileID: 1397783478465382133}
   m_Layer: 6
   m_Name: Oak2
@@ -196,27 +195,11 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.005
+  - screenRelativeHeight: 0.02
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5258209743868896825}
   m_Enabled: 1
---- !u!54 &3427395020248627542
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3427395020248627543}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!136 &1397783478465382133
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5270870122720282773}
   - component: {fileID: 7980681157256068191}
   - component: {fileID: 3466873472281023013}
+  - component: {fileID: -8202495790837378969}
   m_Layer: 0
   m_Name: HayBale
   m_TagString: Untagged
@@ -99,3 +100,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 9091968606155194856, guid: e81dee5d07f5b5d4390a44da638362bf, type: 3}
+--- !u!205 &-8202495790837378969
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485326276553940362}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0056910217, y: 0.29143447, z: -0.00000020861626}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.02
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -7511558181221131132, guid: e81dee5d07f5b5d4390a44da638362bf,
+        type: 3}
+  m_Enabled: 1
