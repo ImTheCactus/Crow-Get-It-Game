@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7738715313172490087}
   - component: {fileID: 6163889037800669642}
   - component: {fileID: 1657372190210691118}
-  - component: {fileID: 1657372190210691117}
   - component: {fileID: 2884114011429550320}
   - component: {fileID: 4420097171773386147}
   - component: {fileID: 8568639092930490814}
@@ -104,27 +103,11 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.005
+  - screenRelativeHeight: 0.02
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 6163889037800669642}
+    - renderer: {fileID: 0}
   m_Enabled: 1
---- !u!54 &1657372190210691117
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401636135667427343}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!136 &2884114011429550320
 CapsuleCollider:
   m_ObjectHideFlags: 0
