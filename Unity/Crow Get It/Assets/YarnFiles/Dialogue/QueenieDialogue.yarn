@@ -1,7 +1,7 @@
 ﻿title: QueenieDialogue
 ---
 <<if $FindingQueenie is true>>
-    ?: Are you lost darling?
+    ?: Are you lost darling
     ?: I dont get many visitors around here
     Cawson: Just trying to help my friend Chip
     ?: Ah I see
