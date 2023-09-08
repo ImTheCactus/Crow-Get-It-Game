@@ -1,12 +1,12 @@
 ﻿title: Honey
 tags:
 ---
-<<if $FindingHoney is false>>
-    Its some Honey
+<<if $EarntHoney is false>>
+    You cant take this yet
 <<else>>
-    Hey! This is what Chip wanted
+    Thanks Queenie, Ill say hi to Chip for you
     HONEY COLLECTED
     <<set $HoneyFound to true>>
-    <<hide Peach self>>
+    <<hide Honey self>>
 <<endif>>
 ===

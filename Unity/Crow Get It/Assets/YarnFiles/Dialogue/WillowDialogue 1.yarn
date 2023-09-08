@@ -1,8 +1,7 @@
-﻿title: WillowDialogue
+title: WillowDialogue
 tags:
 ---
-<<if visited("WillowDialogue") is false>>
-    <<set $FindingBerry to false>>
+<<if visited("WillowDialogue") is false>> 
     <<set $BerryFound to false>>
 
     ?: Hello! Hello! How are you! What are you up to! Are you having a good day!
@@ -27,17 +26,21 @@ tags:
 <<if $BerryFound is false>>
     <<jump WillowQuest>>
 <<else>>
-    <<jump WillowUrchinFound>>
+    
 <<endif>>
 ===
 
 title: WillowQuest
 ---
-<<if $FindingBerry is false>>
     Willow: Oh, I was look for these pretty berries
     Willow: I Love the colour of them and they’re the sweetest berries I ever tasted!
+<<if $BerryFound is true>>
+    
+    -> give Berry
+        <<jump WillowBerryFound>>
 <<else>>
-    Willow: Find anything yet?
+    -> I'll see if I can find some
+        <<jump WillowEnd>>
 <<endif>>
 ===
 
