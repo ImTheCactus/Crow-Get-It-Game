@@ -1,0 +1,69 @@
+﻿title: QueenieDialogue
+---
+<<if $FindingQueenie is true>>
+    ?: Are you lost darling?
+    ?: I dont get many visitors around here
+    Cawson: Just trying to help my friend Chip
+    ?: Ah I see
+    <<set $FindingFlower to false>>
+    <<set $FlowerFound to false>>
+    <<jump QueenieQuest>>
+<<else>>
+    <<jump QueenieOption>>
+<<endif>>
+===
+
+title: QueenieQuest
+---
+<<if $FindingFlower is false>>
+    Queenie: My name is Queenie, Queen of the hive
+    Queenie: I may be able to help you but you have to help me in return
+    Queenie: I need you to find a sweet flower for me
+    Queenie: Once I get it, I'll share some of my honey with you
+    <<set $FindingFlower to false>>
+
+<<else>>
+    Queenie: Hello again
+<<endif>>
+
+-> What do you need me to do 
+    <<jump>>
+
+-> Where should I look
+    <<jump>>
+
+-> See you soon
+    <<jump>>
+
+===
+
+title: WhatFlower
+---
+    Queenie: Its a large flower, you'll know it when you see it
+===
+
+title: WhereFlower
+---
+    Queenie: It should be around here somewhere
+===
+
+title: EndQueenie
+---
+    Queenie: Come back quickly now!
+===
+
+title: GiveHoney
+---
+    Queenie: Oh my DAYS!
+    Queenie: you've actually found it!
+    Queenie: Thankyou sweetness, the honey is all yours!
+    <<set $EarntHoney to true>>
+===
+title: QueenieOption
+---
+<<if $FlowerFound is true>>
+        <<jump GiveHoney>>
+<<else>>
+    BUZZZZ
+<<endif>>
+===

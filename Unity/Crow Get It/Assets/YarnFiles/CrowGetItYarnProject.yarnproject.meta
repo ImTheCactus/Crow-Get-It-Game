@@ -24,6 +24,7 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: 74d0366d8d8028c4b9b1b98ac3e1e1cc, type: 3}
   - {fileID: 6391573757903218779, guid: 03ea46ab900fe2643b26e93d98130c47, type: 3}
   - {fileID: 6391573757903218779, guid: ae84a752e5c1a564c8461ee569a68868, type: 3}
+  - {fileID: 6391573757903218779, guid: 5e81a7154967be345930c57194dcaa3c, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $FindingFruit
@@ -214,6 +215,15 @@ ScriptedImporter:
     description: Implicitly declared in Button.yarn, node Button
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 74d0366d8d8028c4b9b1b98ac3e1e1cc,
+      type: 3}
+  - name: $FindingBerry
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Berry.yarn, node Berry
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: ae84a752e5c1a564c8461ee569a68868,
       type: 3}
   defaultLanguage: en-AU
   languagesToSourceAssets: []

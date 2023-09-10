@@ -2879,6 +2879,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 9198189853492632843, guid: 5182f48a609619545b00bcc1524db554,
+        type: 3}
+      propertyPath: startNode
+      value: QueenieDialogue
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5182f48a609619545b00bcc1524db554, type: 3}
 --- !u!1001 &1523990141333861195
