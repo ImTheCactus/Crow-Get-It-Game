@@ -5,47 +5,62 @@ using UnityEngine;
 public class CaveLight : MonoBehaviour
 {
     private Light directionalLight;
-    public bool changeLight = false;
-    public float intensitySpeed = 1f;
-    public float minIntensity = 0f;
-    public float maxIntensity = 2.5f;
+    private bool changeLight = false;
     private bool isDark = false;
-    
-    float startTime;
+    private float transitionSpeed = 0.01f;
+    private float minIntensity = 0.01f;
+    private float maxIntensity = 2.5f;
 
     private void Start()
     {
         directionalLight = GetComponentInChildren<Light>();
-        startTime = Time.time;
-        changeLight = false;
-        maxIntensity = 2.5f;
+        isDark = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             changeLight = true;
         }
     }
 
-
-    private void Update()
+    private void ChangeLight()
     {
-        if(changeLight == true)
+        if (changeLight == true)
         {
-            if (isDark == false)
+            if (directionalLight.intensity > minIntensity && isDark == false)
             {
-                directionalLight.intensity = minIntensity;
-                isDark = true;
-                changeLight = false;
+                for (int i = 0; i < maxIntensity; i++)
+                {
+                    directionalLight.intensity -= transitionSpeed;
+                    if (directionalLight.intensity <= minIntensity)
+                    {
+                        directionalLight.intensity = minIntensity;
+                        changeLight = false;
+                        isDark = true;
+                    }
+                }
             }
-            else if(isDark == true)
+            else
             {
-                directionalLight.intensity = maxIntensity;
-                isDark = false;
-                changeLight = false;
+                for (int i = 0; i < minIntensity; i++)
+                {
+                    directionalLight.intensity += transitionSpeed;
+                    if (directionalLight.intensity >= maxIntensity)
+                    {
+                        directionalLight.intensity = maxIntensity;
+                        changeLight = false;
+                        isDark = false;
+                    }
+                }
             }
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        ChangeLight();
     }
 }
