@@ -11,6 +11,8 @@ public class KeytoMainMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F12))
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("MainMenu");
             Debug.Log("da escapee were peeessed!");
         }
