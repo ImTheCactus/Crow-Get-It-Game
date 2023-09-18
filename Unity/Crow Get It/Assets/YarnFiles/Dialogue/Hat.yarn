@@ -6,7 +6,7 @@ tags:
 <<else>>
     Maybe I can bring this back to the Scarecrow
     HAT COLLECTED
-    <<set $HatFound to true>>
+    <<set $FoundHat to true>>
 
 <<endif>>
 ===

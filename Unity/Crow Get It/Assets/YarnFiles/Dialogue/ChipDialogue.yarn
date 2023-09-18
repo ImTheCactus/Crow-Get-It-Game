@@ -29,6 +29,7 @@ title: ChipIntro
     <<set $EarntHoney to false>>
     <<set $HoneyFound to false>>
     <<set $FindingQueenie to true>>
+    <<set $FindingStraw to false>>
     <<jump ChipQuest>>
 <<else>>
     <<jump ChipHoneyFound>>
@@ -47,11 +48,11 @@ title: ChipQuest
 
 <<endif>>
 
--> How do you know Mush?  <<if !($EarntHoney is false)>>
+-> How do you know Mush?  
     <<jump FriendMush>>
--> Where should I look?  <<if !($EarntHoney is false)>>
+-> Where should I look?  
     <<jump ChipWhereLook>>
--> Thats okay, thanks. 
+-> Okay, thanks. 
     <<jump ChipExit>>
 ===
 title: FriendMush
@@ -75,9 +76,11 @@ title: ChipHoneyFound
 ---
     Chip: You must have honey on you I can smell it!
     Chip: Thankyou so much dear.
-    Chip: you know, if your up for something more, I heard that Willow is hiding around here somewhere trying to find a some berries!
+    Chip: You know, if your up for something more, I heard that little Willow is hiding around here somewhere trying to find a some berries!
     Chip: Maybe you could find them?
+    Chip: Or if you want to explore a little more, The wheat field is very pretty this time of year!
     <<set $findingBerry to true>>
+    <<set $FindingStraw to true>>
     
 ===
 

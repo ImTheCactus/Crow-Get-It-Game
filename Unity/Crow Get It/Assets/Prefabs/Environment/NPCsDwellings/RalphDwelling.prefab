@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1849265090620821023}
   - component: {fileID: 4489279058574375637}
   - component: {fileID: 5048447987285269727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RalphDwelling
   m_TagString: Untagged
   m_Icon: {fileID: 0}

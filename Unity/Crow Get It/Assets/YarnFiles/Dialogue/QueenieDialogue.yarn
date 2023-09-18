@@ -1,6 +1,7 @@
 ﻿title: QueenieDialogue
+position: -285,-670
 ---
-<<if $FindingQueenie is true>>
+<<if $FlowerFound is false>>
     ?: Are you lost darling?
     ?: I dont get many visitors around here
     Cawson: Just trying to help my friend Chip
@@ -9,61 +10,58 @@
     <<set $FlowerFound to false>>
     <<jump QueenieQuest>>
 <<else>>
-    <<jump QueenieOption>>
+    <<jump GiveHoney>>
 <<endif>>
 ===
 
 title: QueenieQuest
+position: -314,-191
 ---
 <<if $FindingFlower is false>>
     Queenie: My name is Queenie, Queen of the hive
     Queenie: I may be able to help you but you have to help me in return
     Queenie: I need you to find a sweet flower for me
     Queenie: Once I get it, I'll share some of my honey with you
-    <<set $FindingFlower to false>>
+    <<set $FindingFlower to true>>
 
 <<else>>
     Queenie: Hello again
 <<endif>>
 
 -> What do you need me to do 
-    <<jump>>
+    <<jump WhatFlower>>
 
 -> Where should I look
-    <<jump>>
+    <<jump WhereFlower>>
 
 -> See you soon
-    <<jump>>
+    <<jump EndQueenie>>
 
 ===
 
 title: WhatFlower
+position: -582,47
 ---
     Queenie: Its a large flower, you'll know it when you see it
 ===
 
 title: WhereFlower
+position: -360,132
 ---
     Queenie: It should be around here somewhere
 ===
 
 title: EndQueenie
+position: -128,214
 ---
     Queenie: Come back quickly now!
 ===
 
 title: GiveHoney
+position: -528,-427
 ---
     Queenie: Oh my DAYS!
     Queenie: you've actually found it!
     Queenie: Thankyou sweetness, the honey is all yours!
     <<set $EarntHoney to true>>
-===
-title: QueenieOption
----
-<<if $FlowerFound is true>>
-        <<jump GiveHoney>>
-<<else>>
-    BUZZZZ
-<<endif>>
 ===

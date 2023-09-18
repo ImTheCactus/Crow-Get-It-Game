@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7126108798400479495}
   - component: {fileID: 4972520977085937101}
   - component: {fileID: 6850655792973474547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WillowDwelling
   m_TagString: Untagged
   m_Icon: {fileID: 0}

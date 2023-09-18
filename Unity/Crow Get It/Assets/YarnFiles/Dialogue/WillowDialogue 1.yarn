@@ -1,9 +1,9 @@
 title: WillowDialogue
 tags:
+position: 81,-522
 ---
 <<if visited("WillowDialogue") is false>> 
-    <<set $BerryFound to false>>
-
+    
     ?: Hello! Hello! How are you! What are you up to! Are you having a good day!
     Cawson: Hello I’m Cawson who are you? 
     Willow: I’m willow! Like the tree!
@@ -13,10 +13,10 @@ tags:
     <<jump WillowQuest>>
 
     -> Yeah, the stones are cool.
-    <<jump BubblesEnd>>
+    <<jump WillowQuest>>
 
     -> Okay
-    <<jump BubblesEnd>>
+    <<jump WillowEnd>>
 
 
 <<else>>
@@ -26,14 +26,17 @@ tags:
 <<if $BerryFound is false>>
     <<jump WillowQuest>>
 <<else>>
-    
+    <<jump WillowBerryFound>>
 <<endif>>
 ===
 
 title: WillowQuest
+position: 7,-138
 ---
     Willow: Oh, I was look for these pretty berries
     Willow: I Love the colour of them and they’re the sweetest berries I ever tasted!
+    <<set $FindingBerry to true>>
+
 <<if $BerryFound is true>>
     
     -> give Berry
@@ -45,13 +48,16 @@ title: WillowQuest
 ===
 
 title: WillowBerryFound
+position: -309,11
 ---
 Willow: MMMM delicious! Just like I remember! Thank you so much!
-I might have something for you if you come back later.
+Willow: You know, I heard that the farmer left his hat somewhere around here, maybe you can find a use for it?
+<<set $FindingHat to true>>
 
 ===
 
 title: WillowEnd
+position: 237,53
 ---
 Willow: If you wanna come back and say hi I'll be here under my tree
 ===

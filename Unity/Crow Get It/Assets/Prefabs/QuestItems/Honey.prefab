@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7733777323806499004}
   - component: {fileID: 9195461194348518551}
   - component: {fileID: 270886177006332377}
+  - component: {fileID: 5794441623447359386}
   m_Layer: 7
   m_Name: Honey
   m_TagString: Untagged
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableName: Unknown
-  radius: 3
+  radius: 5
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -160,3 +161,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!205 &5794441623447359386
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598569156054991105}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -7511558181221131132, guid: ba1c823b1e0fdb5478ef2389e56408e7,
+        type: 3}
+  m_Enabled: 1

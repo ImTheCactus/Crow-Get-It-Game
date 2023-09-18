@@ -1,5 +1,6 @@
 ﻿title: RaphDialogue
 tags:
+position: -47,-415
 ---
 <<if visited("RaphDialogue") is false>>
     <<set $FindingFirefly to false>>
@@ -19,26 +20,27 @@ tags:
 <<if $FireflyFound is false>>
     <<jump RaphQuest>>
 <<else>>
-    <<jump RaphFireflyFound>>
+    <<jump RaphOptions>>
 <<endif>>
 ===
 
 title: RaphQuest
+position: -219,-230
 ---
 <<if $FindingFirefly is false>>
 
     Raph: People don’t usually find this cave, howd you get in?
 
-    -> from the river 
-    -> I just kinda wandered in
+        -> from the river 
+        -> I just kinda wandered in
 
     Raph: Oh, well its nice to have some company
     Player: Do you need anything
     Raph: Company and help! This is new for me. Im really hungry but I haven’t seen any FIREFLIES recently, you think you could get some for me?
 
     -> Of course!
-    <<set $FindingFirefly to true>>
-
+        <<set $FindingFirefly to true>>
+        <<jump RaphEnd>>
     -> No I'm okay
 
 <<else>>
@@ -47,6 +49,37 @@ title: RaphQuest
 ===
 
 title: RaphFireflyFound
+position: -86,26
 ---
 Raph: Oh wow! thank you so much!
+    <<set $Parkour1 to true>>
+===
+
+title: RaphOptions
+position: 50,-202
+---
+<<if $Parkour1 and $Parkour2 is true>>
+
+    <<jump ButtonInfoRaph>>
+
+<<else>>
+
+    <<jump RaphFireflyFound>>
+
+<<endif>>
+===
+
+
+title: ButtonInfoRaph
+position: 165,78
+---
+    Raph: Heyooooo!
+    Raph: Just so you know, I saw some REALLY RED and SHINY buttons somewhere around here! 
+    Raph: I like red so I thought you might too!
+===
+
+title: RaphEnd
+position: -354,6
+---
+    Get back soon!
 ===

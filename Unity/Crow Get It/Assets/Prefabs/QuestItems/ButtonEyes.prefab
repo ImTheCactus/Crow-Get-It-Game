@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5319747534523432483}
   - component: {fileID: 4353622176505217999}
   - component: {fileID: 4723371647657791752}
+  - component: {fileID: 9099858431848363885}
   m_Layer: 7
   m_Name: ButtonEyes
   m_TagString: Untagged
@@ -143,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableName: Unknown
-  radius: 3
+  radius: 5
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -160,3 +161,23 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     gameObject: {fileID: 0}
+--- !u!205 &9099858431848363885
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026310868933725425}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -3027589478021159302, guid: 0e7023ac8f1dd7645a0cf3814fb1ce5b,
+        type: 3}
+  m_Enabled: 1

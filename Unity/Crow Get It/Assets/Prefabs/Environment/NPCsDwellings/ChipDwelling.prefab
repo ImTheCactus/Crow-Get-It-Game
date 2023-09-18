@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2339869144536298029}
   - component: {fileID: 1717904471049420168}
   - component: {fileID: 3473346556212824386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ChipDwelling
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -6,7 +6,7 @@ tags:
 <<else>>
     These must be the Scarecrows eyes
     BUTTONS COLLECTED
-    <<set $ButtonFound to true>>
+    <<set $FoundButtons to true>>
 
 <<endif>>
 ===

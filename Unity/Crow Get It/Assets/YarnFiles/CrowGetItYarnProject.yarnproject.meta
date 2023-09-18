@@ -25,6 +25,7 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: 03ea46ab900fe2643b26e93d98130c47, type: 3}
   - {fileID: 6391573757903218779, guid: ae84a752e5c1a564c8461ee569a68868, type: 3}
   - {fileID: 6391573757903218779, guid: 5e81a7154967be345930c57194dcaa3c, type: 3}
+  - {fileID: 6391573757903218779, guid: d99f3889a8af2d347b11abdbe3c84d8a, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $FindingFruit
@@ -90,6 +91,15 @@ ScriptedImporter:
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 6cad23578ddd1c34892cd703effdd943,
       type: 3}
+  - name: $FindingStraw
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in ChipDialogue.yarn, node ChipIntro
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 6cad23578ddd1c34892cd703effdd943,
+      type: 3}
   - name: $findingBerry
     typeName: Bool
     defaultValueBool: 0
@@ -105,6 +115,15 @@ ScriptedImporter:
     defaultValueNumber: 0
     defaultValueString: 
     description: Implicitly declared in WillowDialogue 1.yarn, node WillowDialogue
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 6a57955f677fec248a105ebc6cf78afc,
+      type: 3}
+  - name: $FindingHat
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in WillowDialogue 1.yarn, node WillowBerryFound
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 6a57955f677fec248a105ebc6cf78afc,
       type: 3}
@@ -126,16 +145,7 @@ ScriptedImporter:
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 3c96d3251aac91c40a2837d982b8e351,
       type: 3}
-  - name: $FindingStraw
-    typeName: Bool
-    defaultValueBool: 0
-    defaultValueNumber: 0
-    defaultValueString: 
-    description: Implicitly declared in Straw.yarn, node Straw
-    isImplicit: 1
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: ee6a78ebc9897f54c9463fbda74ab268,
-      type: 3}
-  - name: $StrawFound
+  - name: $FoundStuffing
     typeName: Bool
     defaultValueBool: 0
     defaultValueNumber: 0
@@ -162,16 +172,25 @@ ScriptedImporter:
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: e056d7fcb11f7a84f9e47d1072199a63,
       type: 3}
-  - name: $FindingHat
+  - name: $Parkour1
     typeName: Bool
     defaultValueBool: 0
     defaultValueNumber: 0
     defaultValueString: 
-    description: Implicitly declared in Hat.yarn, node Hat
+    description: Implicitly declared in RaphDialogue 1.yarn, node RaphFireflyFound
     isImplicit: 1
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: 90eea85681d634840b250561e7073745,
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e056d7fcb11f7a84f9e47d1072199a63,
       type: 3}
-  - name: $HatFound
+  - name: $Parkour2
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in RaphDialogue 1.yarn, node RaphOptions
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e056d7fcb11f7a84f9e47d1072199a63,
+      type: 3}
+  - name: $FoundHat
     typeName: Bool
     defaultValueBool: 0
     defaultValueNumber: 0
@@ -207,7 +226,7 @@ ScriptedImporter:
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 74d0366d8d8028c4b9b1b98ac3e1e1cc,
       type: 3}
-  - name: $ButtonFound
+  - name: $FoundButtons
     typeName: Bool
     defaultValueBool: 0
     defaultValueNumber: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7766912170177431064}
   - component: {fileID: 6658087037991291325}
   - component: {fileID: 8899871163330231671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QueenieDwelling
   m_TagString: Untagged
   m_Icon: {fileID: 0}

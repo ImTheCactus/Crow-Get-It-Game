@@ -2,7 +2,7 @@
 tags:
 ---
 <<if visited("BubblesDialogue") is false>>
-    <<set $FindingUrchin to false>>
+    <<set $FindingUrchin to true>>
     <<set $UrchinFound to false>>
 
     ?: *Blublublublub* hm? *blublublublub*
@@ -11,10 +11,8 @@ tags:
     Bubbles: *blublub*! I’ve been trying to find some urchins to eat but with all these lily pads in the way I can’t get to them.
 
     -> I can get them for you.
-    <<Jump >>
-    -> Why don’t you just get out of the water?
-    <<Jump >>
-
+        <<Jump BubblesQuest>>
+    
 
 <<else>>
     Bubbles: Hi again
@@ -23,20 +21,21 @@ tags:
 <<if $UrchinFound is false>>
     <<jump BubblesQuest>>
 <<else>>
-    <<jump BubblesUrchinFound>>
+    <<jump BubblesOption>>
 <<endif>>
 ===
 
 title: BubblesQuest
 ---
-<<if $FindingUrchin is false>>
-    <<set $FindingUrchin to true>>
+<<if $UrchinFound is false>>
+    
     Wait really! You would do that! For me?! Oh, thank you thank you, thank you 
-    -> That’s okay.
-    <<jump BubblesEnd>>
-    -> Where can I find them?
-    <<jump WhereFindUrchin>>
-    -> Actually I dont really want to right now
+
+        -> That’s okay.
+            <<jump BubblesEnd>>
+        -> Where can I find them?
+            <<jump WhereFindUrchin>>
+        -> Actually I dont really want to right now
     
     
 
@@ -48,7 +47,8 @@ title: BubblesQuest
 
 title: BubblesUrchinFound
 ---
-You found one for me! Thankyou! *Blublub*
+    Bubbles: You found one for me! Thankyou! *Blublub*
+    <<set $Parkour2 to true>>
 ===
 
 title: WhereFindUrchin
@@ -61,3 +61,25 @@ title: BubblesEnd
 ---
 Bubbles: you know where to find me
 ===
+
+title: BubblesOption
+---
+<<if $Parkour1 and $Parkour2 is true>>
+
+    <<jump ButtonInfoBubbles>>
+
+<<else>>
+
+    <<jump BubblesUrchinFound>>
+
+<<endif>>
+===
+
+title: ButtonInfoBubbles
+---
+    Bubbles: Hey you!
+    Bubbles: I saw something shiny near by here
+    Bubbles: Like some big red eyes?
+    Bubbles: Maybe they were gems?
+===
+

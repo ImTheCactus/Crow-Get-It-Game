@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2685469100855236118}
   - component: {fileID: 1363298202682169779}
   - component: {fileID: 3823449671257058681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MushDwelling
   m_TagString: Untagged
   m_Icon: {fileID: 0}

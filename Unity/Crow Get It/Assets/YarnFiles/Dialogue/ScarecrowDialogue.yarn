@@ -1,0 +1,86 @@
+﻿title: ScarecrowDialogue
+tags:
+---
+<<if visited("ScarecrowDialogue") is false>>
+
+    Scarecrow: ... Hay-lo
+    Cawson: Are you okay?
+    Scarecrow: n-no the farmer, he took me from my field
+    Cawson: oh, is that why you look so distressed
+    Scarecrow: HELP ME IM SCARED CROW!
+    Cawson: Its okay, what do you need.
+    Scarecrow: I cant see, I'm hungry and if I go out in the feild like this my head will burn
+    
+
+<<else>>
+    <<jump ScarecrowOption1>>
+
+<<endif>>
+===
+
+title: ScarecrowOption1
+---
+<<if $FoundStuffing is false>>
+
+    Scarecrow: Hay-lp me
+    Scarecrow: Hurry!
+
+
+<<else>>
+    <<jump ScarecrowOption2>>
+
+<<endif>>
+===
+
+title: ScarecrowOption2
+---
+<<if $FoundButtons is false>>
+
+    Scarecrow: Oh Thankyou Crow
+    Cawson: Do you need anymore?
+    Scarecrow: No thanks I'm stuffed!
+
+
+<<else>>
+    <<jump ScarecrowOption3>>
+
+<<endif>>
+===
+
+title: ScarecrowOption3
+---
+<<if $FoundHat is false>>
+
+    Scarecrow: Now that I have my eyes back I can see that you're as cute as.... well, my eyes
+    Cawson: *cawson blushes*
+
+
+<<else>>
+    <<jump ScarecrowOption4>>
+
+<<endif>>
+===
+
+title: ScarecrowOption4
+---
+    Scarecrow: You found my hat, now my head wont burn in the sun
+    Scarecrow: Hats off to ya
+        <<jump AllItemsFound>>
+===
+
+title: AllItemsFound
+---
+<<if $FoundStuffing and $FoundButtons and $FoundHat is true>>
+    Scarecrow: Thanks crow you really are great, maybe even CAW-some. I can go and be outsanding in my feild again!
+
+<<else>>
+    <<jump ScarecrowEnd>>
+
+<<endif>>
+
+===
+
+title: ScarecrowEnd
+---
+    Scarecrow: see you again soooon!
+===

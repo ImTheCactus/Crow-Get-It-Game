@@ -1949,7 +1949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableName: Unknown
-  radius: 7
+  radius: 10
   OnInteract:
     m_PersistentCalls:
       m_Calls:

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7397634845620854041}
   - component: {fileID: 7397634845620854042}
   - component: {fileID: 7397634845620854043}
+  - component: {fileID: -8102386523146663353}
   m_Layer: 7
   m_Name: Flower
   m_TagString: Untagged
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableName: Unknown
-  radius: 3
+  radius: 5
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -161,3 +162,23 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     gameObject: {fileID: 0}
+--- !u!205 &-8102386523146663353
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397634845620854021}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -1789022924748715232, guid: 5a704d9820e24a442a2c28c4ebd4b4e1,
+        type: 3}
+  m_Enabled: 1
