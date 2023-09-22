@@ -72,6 +72,7 @@ title: AllItemsFound
 ---
 <<if $FoundStuffing and $FoundButtons and $FoundHat is true>>
     Scarecrow: Thanks crow you really are great, maybe even CAW-some. I can go and be outsanding in my field again!
+    THANKS FOR PLAYING CROW GET IT!!!
 
 <<else>>
     <<jump ScarecrowEnd>>
