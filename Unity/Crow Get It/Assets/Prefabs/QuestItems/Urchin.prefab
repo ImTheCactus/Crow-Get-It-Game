@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 1523990141821510585}
   - component: {fileID: 1523990141821510579}
   - component: {fileID: 1523990141821510588}
-  - component: {fileID: 1523990141821510589}
   - component: {fileID: 1523990141821510590}
   - component: {fileID: 1523990141821510591}
   - component: {fileID: 1523990141821510584}
-  - component: {fileID: -1517624281823545156}
+  - component: {fileID: 1248112098575350668}
   m_Layer: 7
   m_Name: Urchin
   m_TagString: Untagged
@@ -89,22 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &1523990141821510589
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523990141821510586}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!135 &1523990141821510590
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -161,7 +144,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     gameObject: {fileID: 0}
---- !u!205 &-1517624281823545156
+--- !u!205 &1248112098575350668
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,15 +152,14 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523990141821510586}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
+  m_LocalReferencePoint: {x: 0, y: 0.0026361998, z: -0.00042731687}
+  m_Size: 0.035696853
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.01
+  - screenRelativeHeight: 0.02
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 7271953210908436472, guid: 37932696c3f5cb54c98fc4c6a2522eed,
-        type: 3}
+    - renderer: {fileID: 1523990141821510588}
   m_Enabled: 1
