@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5968696356261904832}
   - component: {fileID: 5968696356261904839}
   - component: {fileID: 5968696356261904834}
-  - component: {fileID: -1217206757114988901}
+  - component: {fileID: -95786217959758425}
   m_Layer: 0
   m_Name: BerryBush2
   m_TagString: Untagged
@@ -101,7 +101,7 @@ CapsuleCollider:
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0.21, y: -0.2, z: -0.8}
---- !u!205 &-1217206757114988901
+--- !u!205 &-95786217959758425
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,17 +109,16 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5968696356261904838}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0056910217, y: 0.29143447, z: -0.00000020861626}
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
   m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.02
+  - screenRelativeHeight: 0.03
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: -8374324888432751220, guid: 7f7546aab9077b844a12768c31195284,
-        type: 3}
+    - renderer: {fileID: 5968696356261904839}
   m_Enabled: 1
 --- !u!1 &5968696356587789534
 GameObject:

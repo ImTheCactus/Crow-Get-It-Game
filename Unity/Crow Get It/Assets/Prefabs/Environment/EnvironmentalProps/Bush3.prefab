@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8689304957445664394}
   - component: {fileID: 8689304957445664395}
   - component: {fileID: 8689304957445664396}
-  - component: {fileID: -3355168943513974878}
+  - component: {fileID: -5292570045432950316}
   m_Layer: 0
   m_Name: Bush3
   m_TagString: Untagged
@@ -130,7 +130,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1, z: 1.5}
   m_Center: {x: 0, y: 0.25, z: 0.3}
---- !u!205 &-3355168943513974878
+--- !u!205 &-5292570045432950316
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,15 +138,14 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8689304957445664384}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0056910217, y: 0.29143447, z: -0.00000020861626}
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
   m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.02
+  - screenRelativeHeight: 0.03
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: -1453610289856402005, guid: 7808c0188ddc90143981359185c09714,
-        type: 3}
+    - renderer: {fileID: 8689304957445664399}
   m_Enabled: 1

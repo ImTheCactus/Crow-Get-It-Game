@@ -106,7 +106,7 @@ LODGroup:
   - screenRelativeHeight: 0.02
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 0}
+    - renderer: {fileID: 6163889037800669642}
   m_Enabled: 1
 --- !u!136 &2884114011429550320
 CapsuleCollider:

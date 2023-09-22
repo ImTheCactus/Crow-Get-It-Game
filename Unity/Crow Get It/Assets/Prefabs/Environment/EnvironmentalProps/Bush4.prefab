@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7207156194830686907}
   - component: {fileID: 7207156194830686908}
   - component: {fileID: 5297282747876597156}
-  - component: {fileID: 7354255440342076895}
+  - component: {fileID: -5513869170058956442}
   m_Layer: 0
   m_Name: Bush4
   m_TagString: Untagged
@@ -98,7 +98,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.8, z: 1}
   m_Center: {x: -0.42133483, y: 0.4, z: -0.03006038}
---- !u!205 &7354255440342076895
+--- !u!205 &-5513869170058956442
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,15 +106,14 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7207156194830686909}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0056910217, y: 0.29143447, z: -0.00000020861626}
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
   m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.02
+  - screenRelativeHeight: 0.03
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 2326445676276331619, guid: 5e72fe8dd6d330c4185ac7c459aadab9,
-        type: 3}
+    - renderer: {fileID: 7207156194830686908}
   m_Enabled: 1
