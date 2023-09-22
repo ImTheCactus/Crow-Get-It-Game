@@ -2,10 +2,10 @@
 tags:
 ---
 <<if $FindingUrchin is false>>
-    That looks pointy
+    That looks pointy. Ouchie!
 <<else>>
-    This is what Bubbles wanted
-    URCHIN COLLECTED
+    This is what Bubbles wanted!
+    URCHIN COLLECTED!
     <<set $UrchinFound to true>>
 
 <<endif>>

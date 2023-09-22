@@ -2,10 +2,10 @@
 tags:
 ---
 <<if $FindingFlower is false>>
-    mmmm that smells nice and sweet!
+    Mmmm that smells nice and sweet!
 <<else>>
-    This is what Queenie wanted
-    FLOWER COLLECTED
+    This is what Queenie wanted!
+    FLOWER COLLECTED!
     <<set $FlowerFound to true>>
 
 <<endif>>

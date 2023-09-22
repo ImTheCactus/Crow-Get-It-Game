@@ -2,10 +2,10 @@
 tags:
 ---
 <<if $EarntHoney is false>>
-    You cant take this yet
+    You cant take this yet...
 <<else>>
-    Thanks Queenie, Ill say hi to Chip for you
-    HONEY COLLECTED
+    Thanks Queenie, I'll say hi to Chip for you.
+    HONEY COLLECTED!
     <<set $HoneyFound to true>>
     <<hide Honey self>>
 <<endif>>

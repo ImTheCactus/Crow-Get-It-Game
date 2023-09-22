@@ -3,13 +3,13 @@ tags:
 ---
 <<if visited("ScarecrowDialogue") is false>>
 
-    Scarecrow: ... Hay-lo
+    Scarecrow: ... Hay-lo...
     Cawson: Are you okay?
-    Scarecrow: n-no the farmer, he took me from my field
-    Cawson: oh, is that why you look so distressed
-    Scarecrow: HELP ME IM SCARED CROW!
-    Cawson: Its okay, what do you need.
-    Scarecrow: I cant see, I'm hungry and if I go out in the feild like this my head will burn
+    Scarecrow: n-no the farmer, he took me from my field...
+    Cawson: Oh, is that why you look so distressed?
+    Scarecrow: HELP ME I'M SCARED CROW!
+    Cawson: It's okay. What do you need?
+    Scarecrow: I can't see, I'm hungry and if I go out in the field like this my head will burn...
     
 
 <<else>>
@@ -22,7 +22,7 @@ title: ScarecrowOption1
 ---
 <<if $FoundStuffing is false>>
 
-    Scarecrow: Hay-lp me
+    Scarecrow: Hay-lp me!
     Scarecrow: Hurry!
 
 
@@ -36,7 +36,7 @@ title: ScarecrowOption2
 ---
 <<if $FoundButtons is false>>
 
-    Scarecrow: Oh Thankyou Crow
+    Scarecrow: Oh Thank you Crow.
     Cawson: Do you need anymore?
     Scarecrow: No thanks I'm stuffed!
 
@@ -51,8 +51,8 @@ title: ScarecrowOption3
 ---
 <<if $FoundHat is false>>
 
-    Scarecrow: Now that I have my eyes back I can see that you're as cute as.... well, my eyes
-    Cawson: *cawson blushes*
+    Scarecrow: Now that I have my eyes back I can see that you're as cute as... Well, my eyes!
+    Cawson: *Cawson blushes*
 
 
 <<else>>
@@ -63,15 +63,15 @@ title: ScarecrowOption3
 
 title: ScarecrowOption4
 ---
-    Scarecrow: You found my hat, now my head wont burn in the sun
-    Scarecrow: Hats off to ya
+    Scarecrow: You found my hat, now my head won't burn in the sun.
+    Scarecrow: Hats off to ya!
         <<jump AllItemsFound>>
 ===
 
 title: AllItemsFound
 ---
 <<if $FoundStuffing and $FoundButtons and $FoundHat is true>>
-    Scarecrow: Thanks crow you really are great, maybe even CAW-some. I can go and be outsanding in my feild again!
+    Scarecrow: Thanks crow you really are great, maybe even CAW-some. I can go and be outsanding in my field again!
 
 <<else>>
     <<jump ScarecrowEnd>>
@@ -82,5 +82,5 @@ title: AllItemsFound
 
 title: ScarecrowEnd
 ---
-    Scarecrow: see you again soooon!
+    Scarecrow: See you again soooon!
 ===

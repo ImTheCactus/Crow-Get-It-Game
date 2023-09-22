@@ -4,9 +4,9 @@ position: 81,-522
 ---
 <<if visited("WillowDialogue") is false>> 
     
-    ?: Hello! Hello! How are you! What are you up to! Are you having a good day!
+    ?: Hello! Hello! How are you? What are you up to? Are you having a good day?
     Cawson: Hello I’m Cawson who are you? 
-    Willow: I’m willow! Like the tree!
+    Willow: I’m Willow, like the tree!
     I was looking for something but got distracted by this pretty arrangement of stones!
 
     -> What were you looking for?
@@ -15,12 +15,12 @@ position: 81,-522
     -> Yeah, the stones are cool.
     <<jump WillowQuest>>
 
-    -> Okay
+    -> Okay.
     <<jump WillowEnd>>
 
 
 <<else>>
-    Willow: Hi again
+    Willow: Hi again!
 <<endif>>
 
 <<if $BerryFound is false>>
@@ -33,16 +33,16 @@ position: 81,-522
 title: WillowQuest
 position: 7,-138
 ---
-    Willow: Oh, I was look for these pretty berries
-    Willow: I Love the colour of them and they’re the sweetest berries I ever tasted!
+    Willow: Oh, I was looking for these pretty berries.
+    Willow: I LOVE the colour of them and they’re the SWEETEST berries I ever tasted!
     <<set $FindingBerry to true>>
 
 <<if $BerryFound is true>>
     
-    -> give Berry
+    -> Give berry.
         <<jump WillowBerryFound>>
 <<else>>
-    -> I'll see if I can find some
+    -> I'll see if I can find some.
         <<jump WillowEnd>>
 <<endif>>
 ===
@@ -50,7 +50,7 @@ position: 7,-138
 title: WillowBerryFound
 position: -309,11
 ---
-Willow: MMMM delicious! Just like I remember! Thank you so much!
+Willow: MMMM DELICIOUS! Just like I remember. Thank you so much!
 Willow: You know, I heard that the farmer left his hat somewhere around here, maybe you can find a use for it?
 <<set $FindingHat to true>>
 
@@ -59,5 +59,5 @@ Willow: You know, I heard that the farmer left his hat somewhere around here, ma
 title: WillowEnd
 position: 237,53
 ---
-Willow: If you wanna come back and say hi I'll be here under my tree
+Willow: If you wanna come back and say hi I'll be here under my tree.
 ===

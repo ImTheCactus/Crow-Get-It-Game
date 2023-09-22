@@ -3,8 +3,8 @@
 <<if $FindingFruit is false>>
     Its a peach
 <<else>>
-    Hey! This is what Mush wanted
-    PEACH COLLECTED
+    Hey! This is what Mush wanted.
+    PEACH COLLECTED!
     <<set $FruitFound to true>>
         <<hide Peach self>>
 

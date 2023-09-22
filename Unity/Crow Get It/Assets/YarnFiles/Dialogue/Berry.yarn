@@ -2,10 +2,10 @@
 tags:
 ---
 <<if $FindingBerry is false>>
-    Thats a cool colour
+    That's a cool colour.
 <<else>>
-    Hey! This is what Willow wanted
-    BERRY COLLECTED
+    Hey! This is what Willow wanted.
+    BERRY COLLECTED!
     <<set $BerryFound to true>>
 
 <<endif>>

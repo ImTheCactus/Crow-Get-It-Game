@@ -2,10 +2,10 @@
 tags:
 ---
 <<if $FindingHat is false>>
-    Thats way to big for me, I wonder who it belongs to...
+    That's way too big for me, I wonder who it belongs to...
 <<else>>
-    Maybe I can bring this back to the Scarecrow
-    HAT COLLECTED
+    Maybe I can bring this back to the Scarecrow.
+    HAT COLLECTED!
     <<set $FoundHat to true>>
 
 <<endif>>

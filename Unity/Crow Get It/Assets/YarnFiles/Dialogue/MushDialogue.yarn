@@ -6,12 +6,12 @@
     <<set $FindingChip to false>>
 
     ?: Hello...
-    Player: Hi 
+    Player: Hi!
     ?: Who are you?
     Cawson: I'm Cawson, who are you?
-    Mush: I'm mush, you must be new here.
+    Mush: I'm Mush, you must be new here.
 <<else>>
-    Mush: Hi again
+    Mush: Hi again.
 <<endif>>
 
 <<if $FruitFound is false>>
@@ -42,25 +42,25 @@ title: MushQuest
 ===
 title: MushWhatFruit
 ---
-    Mush: Well I like any fruit, cant be picky...
+    Mush: Well I like any fruit, can't be picky...
     Mush: But I do really like peaches!
     <<jump MushQuest>>
 ===
 
 title: MushWhereLook
 ---
-    Mush: oh, um, maybe you can spot one from the path?
+    Mush: Oh, um, maybe you can spot one from the path?
     <<jump MushQuest>>
 ===
 title: MushExit
 ---
-    Mush: oh okay, bye
+    Mush: Oh okay, bye.
 ===
 
 title: MushFruitFound
 ---
     Mush: Hey you found one!
-    Mush: and it's my favorite!
+    Mush: And it's my favorite!
     Mush: You've been so helpful, my friend Chip could sure use your help.
     Mush: She looks scary but shes very forgetful, even if crows were tasty she wouldn't remember that.
     <<set $FindingChip to true>>

@@ -6,15 +6,15 @@ position: -47,-415
     <<set $FindingFirefly to false>>
     <<set $FireflyFound to false>>
 
-    ?: Hello…
-    Cawson: Who are you..
+    ?: Hello...
+    Cawson: Who are you...
     ?: Who me?
-    Cawson: who else?
-    Raph: Im Raph
+    Cawson: Who else?
+    Raph: I'm Raph!.
     
 
 <<else>>
-    Raph: Hi again
+    Raph: Hi again.
 <<endif>>
 
 <<if $FireflyFound is false>>
@@ -29,19 +29,19 @@ position: -219,-230
 ---
 <<if $FindingFirefly is false>>
 
-    Raph: People don’t usually find this cave, howd you get in?
+    Raph: People don’t usually find this cave, how'd you get in?
 
-        -> from the river 
-        -> I just kinda wandered in
+        -> From the river...
+        -> I just kinda wandered in.
 
-    Raph: Oh, well its nice to have some company
-    Player: Do you need anything
-    Raph: Company and help! This is new for me. Im really hungry but I haven’t seen any FIREFLIES recently, you think you could get some for me?
+    Raph: Oh, well it's nice to have some company!
+    Player: Do you need anything?
+    Raph: Company and help! This is new for me. I'm really hungry but I haven’t seen any FIREFLIES recently. You think you could get some for me?
 
     -> Of course!
         <<set $FindingFirefly to true>>
         <<jump RaphEnd>>
-    -> No I'm okay
+    -> No I'm okay.
 
 <<else>>
     Raph: Found anthing yet?
@@ -51,7 +51,7 @@ position: -219,-230
 title: RaphFireflyFound
 position: -86,26
 ---
-Raph: Oh wow! thank you so much!
+Raph: Oh wow! Thank you so much!
     <<set $Parkour1 to true>>
 ===
 

@@ -2,7 +2,7 @@
 
 ---
 <<if $FindingChip is false>>
-    ?: GGGGGRRRRRRRRRR
+    ?: GGGGGRRRRRRRRRR my tummy hungy...
     <<set $FindingHoney to false>>
     <<jump ChipExitGrowl>>
 
@@ -19,13 +19,13 @@ title: ChipIntro
 
 <<if $HoneyFound is false>> 
     Chip: Hello!
-    Cawson: Hello, your friend Mush said that you need help with something
-    Chip: Oh you know Mush do you dear?
-    Chip: Now that you bring it up, I do want some honey.
-    Chip: But it seems I can't remember where the hive was?
+    Cawson: Hello, your friend Mush said that you need help with something.
+    Chip: Oh you know Mush, do you dear?
+    Chip: Now that you bring it up, I've been craving some honey lately.
+    Chip: But it seems I can't remember where the hive was.
     Chip: Do you mind getting me some? It has to be around here somewhere...
-    Cawson: Yeah I can go get you some!
-    Chip: Oh thankyou sweet!
+    Cawson: Yeah I can go get you some.
+    Chip: Oh thankyou, sweet!
     <<set $EarntHoney to false>>
     <<set $HoneyFound to false>>
     <<set $FindingQueenie to true>>
@@ -43,7 +43,7 @@ title: ChipQuest
     
 
 <<else>>
-    Chip: Hi again
+    Chip: Hey again, dearie.
     
 
 <<endif>>
@@ -74,9 +74,9 @@ title: ChipExit
 
 title: ChipHoneyFound
 ---
-    Chip: You must have honey on you I can smell it!
-    Chip: Thankyou so much dear.
-    Chip: You know, if your up for something more, I heard that little Willow is hiding around here somewhere trying to find a some berries!
+    Chip: Oooohhh! I smell honey!!! Did you manage to find some for me dearie?
+    Chip: Thankyou so much!
+    Chip: You know, if your up for something more, I heard that little Willow is hiding around here somewhere trying to find a some berries.
     Chip: Maybe you could find them?
     Chip: Or if you want to explore a little more, The wheat field is very pretty this time of year!
     <<set $findingBerry to true>>
