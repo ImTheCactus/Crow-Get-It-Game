@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7733777323806499004}
   - component: {fileID: 9195461194348518551}
   - component: {fileID: 3141967702227295850}
+  - component: {fileID: 8960553203150337018}
   m_Layer: 7
   m_Name: Honey
   m_TagString: Untagged
@@ -163,3 +164,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 86889507969914034}
   m_Enabled: 1
+--- !u!114 &8960553203150337018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598569156054991105}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea35e367a4aa0d648becf6b4daa1bfeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rB: {fileID: 0}

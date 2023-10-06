@@ -25,11 +25,7 @@ public class WaterTeleport : MonoBehaviour
             controller.enabled = false;
             player.transform.position = teleportPos;
             controller.enabled = true;
-            Debug.Log("YOU CAN'T SWIM");
-        }
-        else
-        {
-            //Debug.Log("not water");
+            //Debug.Log("YOU CAN'T SWIM");
         }
     }
 }

@@ -116,10 +116,10 @@ GameObject:
   - component: {fileID: 332702262597247531}
   - component: {fileID: 4544923450764188539}
   - component: {fileID: 6541819506069075988}
-  - component: {fileID: 3161747541459340364}
   - component: {fileID: 2932036511578583881}
   - component: {fileID: 3822225935407395380}
   - component: {fileID: 111057077239349201}
+  - component: {fileID: 2354920206382365403}
   m_Layer: 7
   m_Name: Peach
   m_TagString: Untagged
@@ -195,19 +195,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3161747541459340364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4700466679542103043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea35e367a4aa0d648becf6b4daa1bfeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rB: {fileID: 0}
 --- !u!114 &2932036511578583881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,3 +251,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.4
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &2354920206382365403
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700466679542103043}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.02
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6541819506069075988}
+  m_Enabled: 1
