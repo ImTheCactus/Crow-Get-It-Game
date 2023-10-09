@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayCastText : MonoBehaviour
+public class EToInteract : MonoBehaviour
 {
     public GameObject currentHitObject;
     public GameObject interactText;
@@ -15,7 +15,7 @@ public class RayCastText : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "TEST")
+        if (other.gameObject.tag == "InteractText")
         {
             inRange = true;
         }

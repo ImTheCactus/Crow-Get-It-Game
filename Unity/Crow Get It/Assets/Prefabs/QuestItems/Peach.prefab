@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 3822225935407395380}
   - component: {fileID: 111057077239349201}
   - component: {fileID: 2354920206382365403}
+  - component: {fileID: 479852870446938831}
   m_Layer: 7
   m_Name: Peach
   m_TagString: Untagged
@@ -270,3 +271,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6541819506069075988}
   m_Enabled: 1
+--- !u!135 &479852870446938831
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700466679542103043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}

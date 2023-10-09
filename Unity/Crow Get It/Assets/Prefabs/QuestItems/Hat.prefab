@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1813223120808469372}
   - component: {fileID: 7873397353744559789}
   - component: {fileID: 5397984841279975231}
+  - component: {fileID: 3798972555779524429}
+  - component: {fileID: 5800347654880784948}
   m_Layer: 7
   m_Name: Hat
   m_TagString: Untagged
@@ -142,3 +144,35 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     gameObject: {fileID: 0}
+--- !u!135 &3798972555779524429
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559184417980587682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &5800347654880784948
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559184417980587682}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1.6146837
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.05
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 9045332120368470553}
+  m_Enabled: 1

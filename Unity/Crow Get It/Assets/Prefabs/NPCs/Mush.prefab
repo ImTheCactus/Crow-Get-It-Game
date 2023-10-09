@@ -1261,6 +1261,7 @@ GameObject:
   - component: {fileID: 2950295493169057451}
   - component: {fileID: 6115943700340666733}
   - component: {fileID: 7580129572983471732}
+  - component: {fileID: 4743150945666215985}
   m_Layer: 7
   m_Name: Mush
   m_TagString: Untagged
@@ -1370,6 +1371,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     gameObject: {fileID: 0}
+--- !u!135 &4743150945666215985
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903892571234833875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 10
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6092903549099018463
 GameObject:
   m_ObjectHideFlags: 0

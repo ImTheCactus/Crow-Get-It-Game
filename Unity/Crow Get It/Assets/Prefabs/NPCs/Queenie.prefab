@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 1242753265078014013}
   - component: {fileID: 9198189853492632843}
   - component: {fileID: 7536435007877478184}
+  - component: {fileID: 5724781115484058932}
   m_Layer: 7
   m_Name: Queenie
   m_TagString: Untagged
@@ -510,6 +511,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     gameObject: {fileID: 0}
+--- !u!135 &5724781115484058932
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2161248792444349731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2506943268721281611
 GameObject:
   m_ObjectHideFlags: 0

@@ -126,9 +126,8 @@ GameObject:
   - component: {fileID: 2026820794761366008}
   - component: {fileID: 8991539651465910464}
   - component: {fileID: 7275573093536558528}
-  - component: {fileID: 3041260055151866479}
-  - component: {fileID: 1346991819037467540}
   - component: {fileID: 1086490767242491757}
+  - component: {fileID: 2335909347024123158}
   m_Layer: 6
   m_Name: ParkourGlowShroom2
   m_TagString: Untagged
@@ -203,33 +202,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3041260055151866479
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3670215448992607377}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.15
-  m_Height: 0.9
-  m_Direction: 1
-  m_Center: {x: 0.05, y: 0.4, z: 0.1}
---- !u!65 &1346991819037467540
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3670215448992607377}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.15, z: 0.75}
-  m_Center: {x: 0.06261897, y: 0.77, z: 0.10845935}
 --- !u!205 &1086490767242491757
 LODGroup:
   m_ObjectHideFlags: 0
@@ -250,3 +222,17 @@ LODGroup:
     - renderer: {fileID: 5533753843168567183, guid: 444c72ce39c417e4ea49b7eb9206005c,
         type: 3}
   m_Enabled: 1
+--- !u!64 &2335909347024123158
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670215448992607377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2768252077950380963, guid: 444c72ce39c417e4ea49b7eb9206005c, type: 3}
