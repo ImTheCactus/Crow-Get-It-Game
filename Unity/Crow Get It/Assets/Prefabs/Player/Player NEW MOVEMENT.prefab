@@ -1751,7 +1751,6 @@ GameObject:
   - component: {fileID: 1597854667687605258}
   - component: {fileID: 1597854667687605253}
   - component: {fileID: 1597854667687605252}
-  - component: {fileID: 1597854667687605255}
   m_Layer: 0
   m_Name: Player NEW MOVEMENT
   m_TagString: Untagged
@@ -1871,20 +1870,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportPoint: {fileID: 0}
   player: {fileID: 1597854667687605249}
---- !u!114 &1597854667687605255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597854667687605249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac68bb07652a5124490cadea21e0fec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHitObject: {fileID: 0}
-  interactText: {fileID: 0}
 --- !u!1 &1597854667704483909
 GameObject:
   m_ObjectHideFlags: 0
