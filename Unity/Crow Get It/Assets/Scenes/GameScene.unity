@@ -13092,17 +13092,17 @@ PrefabInstance:
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7197308
+      value: 0.71973073
       objectReference: {fileID: 0}
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06687707
+      value: 0.06687705
       objectReference: {fileID: 0}
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.68806064
+      value: -0.6880607
       objectReference: {fileID: 0}
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
@@ -13296,8 +13296,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5258099764361353857, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
+      propertyPath: jumpForce
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258099764361353857, guid: 6aa7df2824fa8f647879a7c2dde12e56,
+        type: 3}
       propertyPath: playerHeight
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258099764361353857, guid: 6aa7df2824fa8f647879a7c2dde12e56,
+        type: 3}
+      propertyPath: whatIsGround.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
