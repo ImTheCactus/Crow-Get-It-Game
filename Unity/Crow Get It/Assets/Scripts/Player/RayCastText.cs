@@ -13,37 +13,17 @@ public class RayCastText : MonoBehaviour
         interactText.SetActive(false);
     }
 
-    /*
-    private void OnTriggerStay(Collider other)
-    {
-        Debug.Log("Trigger active");
-        if (other.attachedRigidbody.tag == "TEST")
-        {
-            inRange = true;
-            Debug.Log("inRange = true");
-        }
-        else
-        {
-            inRange = false;
-            Debug.Log("inRange = false");
-        }
-    }
-    */
-
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger active");
-        if (other.attachedRigidbody.tag == "TEST")
+        if (other.gameObject.tag == "TEST")
         {
             inRange = true;
-            Debug.Log("inRange = true");
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         inRange = false;
-        Debug.Log("inRange = false");
     }
 
     void FixedUpdate()
@@ -56,10 +36,9 @@ public class RayCastText : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red); //If collides with object, debug raycast is red.
             var selectedObject = hit.transform;
 
-            if(selectedObject != null && inRange == true) //&& ... = true
+            if(selectedObject != null && inRange == true)
             {
                 interactText.SetActive(true);
-                Debug.Log("Text Shown");
                 currentHitObject = hit.transform.gameObject;
             }
         }
@@ -67,10 +46,9 @@ public class RayCastText : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 8, Color.blue); //If collides with nothing, debug raycast is blue.
 
-            if (currentHitObject != null && inRange == false)
+            if (currentHitObject != null)
             {
                 interactText.SetActive(false);
-                Debug.Log("Text Hidden");
                 currentHitObject = null;
             }
         }
