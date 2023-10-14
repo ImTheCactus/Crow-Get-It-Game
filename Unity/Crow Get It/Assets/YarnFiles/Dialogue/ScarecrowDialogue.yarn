@@ -10,7 +10,12 @@ tags:
     Scarecrow: HELP ME I'M SCARED CROW!
     Cawson: It's okay. What do you need?
     Scarecrow: I can't see, I'm hungry and if I go out in the field like this my head will burn...
-    
+    <<set $FindingStraw to true>>
+    <<set $FindingButton to true>>
+    <<set $FindingHat to true>>
+    <<ScarecrowStrawSwitch>>
+    <<ScarecrowButtonSwitch>>
+    <<ScarecrowHatSwitch>>
 
 <<else>>
     <<jump ScarecrowOption1>>
@@ -39,6 +44,7 @@ title: ScarecrowOption2
     Scarecrow: Oh Thank you Crow.
     Cawson: Do you need anymore?
     Scarecrow: No thanks I'm stuffed!
+    <<ScarecrowStrawSwitch>>
 
 
 <<else>>
@@ -53,6 +59,7 @@ title: ScarecrowOption3
 
     Scarecrow: Now that I have my eyes back I can see that you're as cute as... Well, my eyes!
     Cawson: *Cawson blushes*
+    <<ScarecrowButtonSwitch>>
 
 
 <<else>>
@@ -65,6 +72,7 @@ title: ScarecrowOption4
 ---
     Scarecrow: You found my hat, now my head won't burn in the sun.
     Scarecrow: Hats off to ya!
+        <<ScarecrowHatSwitch>>
         <<jump AllItemsFound>>
 ===
 

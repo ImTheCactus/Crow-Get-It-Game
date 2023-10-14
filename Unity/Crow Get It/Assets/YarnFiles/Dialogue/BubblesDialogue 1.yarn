@@ -30,6 +30,7 @@ title: BubblesQuest
 <<if $UrchinFound is false>>
     
     Wait really! You would do that! For me?! Oh, thank you thank you, thank you.
+    <<BubblesQuestSwitch>>
 
         -> That’s okay.
             <<jump BubblesEnd>>
@@ -48,6 +49,7 @@ title: BubblesQuest
 title: BubblesUrchinFound
 ---
     Bubbles: You found one for me. Thankyou! *Blublub*
+    <<BubblesQuestSwitch>>
     <<set $Parkour2 to true>>
 ===
 

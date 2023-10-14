@@ -36,6 +36,7 @@ position: 7,-138
     Willow: Oh, I was looking for these pretty berries.
     Willow: I LOVE the colour of them and they’re the SWEETEST berries I ever tasted!
     <<set $FindingBerry to true>>
+    <<WillowQuestSwitch>>
 
 <<if $BerryFound is true>>
     
@@ -53,6 +54,7 @@ position: -309,11
 Willow: MMMM DELICIOUS! Just like I remember. Thank you so much!
 Willow: You know, I heard that the farmer left his hat somewhere around here, maybe you can find a use for it?
 <<set $FindingHat to true>>
+<<WillowQuestSwitch>>
 
 ===
 

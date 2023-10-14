@@ -27,6 +27,7 @@ title: MushQuest
     Mush: Hey while your here...
     Mush: I'm looking for some fruit, do you mind helping me find some?
     <<set $FindingFruit to true>>
+    <<MushQuestSwitch>>
 
 <<else>>
     Mush: Have you found any fruit yet?
@@ -64,4 +65,5 @@ title: MushFruitFound
     Mush: You've been so helpful, my friend Chip could sure use your help.
     Mush: She looks scary but shes very forgetful, even if crows were tasty she wouldn't remember that.
     <<set $FindingChip to true>>
+    <<MushQuestSwitch>>
 ===

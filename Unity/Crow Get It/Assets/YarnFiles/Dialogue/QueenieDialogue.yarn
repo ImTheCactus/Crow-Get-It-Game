@@ -8,6 +8,7 @@ position: -285,-670
     ?: Ah I see.
     <<set $FindingFlower to false>>
     <<set $FlowerFound to false>>
+    <<QueenieQuestSwitch>>
     <<jump QueenieQuest>>
 <<else>>
     <<jump GiveHoney>>
@@ -63,5 +64,6 @@ position: -528,-427
     Queenie: Oh my DAYS!
     Queenie: You've actually found it!
     Queenie: Thank you sweetness, the honey is all yours!
+    <<QueenieQuestSwitch>>
     <<set $EarntHoney to true>>
 ===
