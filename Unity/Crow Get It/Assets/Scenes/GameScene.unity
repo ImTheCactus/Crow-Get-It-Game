@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028447, g: 0.22571503, b: 0.3069233, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028456, g: 0.22571497, b: 0.3069233, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13580,17 +13580,17 @@ PrefabInstance:
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.71973073
+      value: 0.7197308
       objectReference: {fileID: 0}
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06687705
+      value: 0.06687707
       objectReference: {fileID: 0}
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6880607
+      value: -0.68806064
       objectReference: {fileID: 0}
     - target: {fileID: 1597854666665917917, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
@@ -13620,7 +13620,12 @@ PrefabInstance:
     - target: {fileID: 1597854667687605249, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597854667687605249, guid: 6aa7df2824fa8f647879a7c2dde12e56,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1597854667687605252, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
@@ -13794,6 +13799,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5258099764361353857, guid: 6aa7df2824fa8f647879a7c2dde12e56,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258099764361353857, guid: 6aa7df2824fa8f647879a7c2dde12e56,
+        type: 3}
       propertyPath: playerHeight
       value: 2
       objectReference: {fileID: 0}
@@ -13802,8 +13812,7 @@ PrefabInstance:
       propertyPath: whatIsGround.m_Bits
       value: 64
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6aa7df2824fa8f647879a7c2dde12e56, type: 3}
 --- !u!4 &1468349223 stripped
 Transform:
@@ -13811,7 +13820,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1468349222}
   m_PrefabAsset: {fileID: 0}
---- !u!143 &1468349225
+--- !u!143 &1468349233
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20093,7 +20102,7 @@ PrefabInstance:
     - target: {fileID: 1651763279262527351, guid: 49d63d512a367cd4385b0fbd67b074a3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1651763279262527351, guid: 49d63d512a367cd4385b0fbd67b074a3,
         type: 3}

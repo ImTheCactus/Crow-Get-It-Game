@@ -35,12 +35,21 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     Rigidbody rb;
 
+    //Animator for triggering anims.
+    private Animator mAnimator;
+    float idleTimer = 0f;
+    bool isIdle = true;
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
         readyToJump = true;
+
+        //Gets Animator component
+        mAnimator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -55,7 +64,7 @@ public class PlayerMovementTutorial : MonoBehaviour
         if (grounded)
             rb.drag = groundDrag;
         else
-            rb.drag = 0;
+            rb.drag = 0;  
     }
 
     private void FixedUpdate()
@@ -86,11 +95,25 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         // on ground
         if(grounded)
+        {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            
+            // if on ground and movement is active, then transition to walk anim
+            if (Input.GetAxisRaw("Horizontal") != Input.GetAxisRaw("Vertical"))
+            {
+                mAnimator.SetFloat("Speed", 1f, 0.1f, Time.deltaTime);
+            }
+            if (Input.GetAxisRaw("Horizontal") == Input.GetAxisRaw("Vertical"))
+            {
+                mAnimator.SetFloat("Speed", 0f, -0.1f, Time.deltaTime);
+            }
+        }
 
         // in air
         else if(!grounded)
+        {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        }
     }
 
     private void SpeedControl()
