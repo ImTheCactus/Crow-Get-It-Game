@@ -96,14 +96,17 @@ public class PlayerMovementTutorial : MonoBehaviour
         // on ground
         if(grounded)
         {
+            // moves player
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-            
+
             // if on ground and movement is active, then transition to walk anim
-            if (Input.GetAxisRaw("Horizontal") != Input.GetAxisRaw("Vertical"))
+            if (horizontalInput != verticalInput)
             {
                 mAnimator.SetFloat("Speed", 1f, 0.1f, Time.deltaTime);
             }
-            if (Input.GetAxisRaw("Horizontal") == Input.GetAxisRaw("Vertical"))
+
+            // if on ground and movement is inactive, then transition to idle anim
+            if (horizontalInput == verticalInput)
             {
                 mAnimator.SetFloat("Speed", 0f, -0.1f, Time.deltaTime);
             }

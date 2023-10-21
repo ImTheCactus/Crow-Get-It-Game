@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EToInteract : MonoBehaviour
 {
-    public GameObject currentHitObject;
+    private GameObject currentHitObject;
     public GameObject interactText;
     private bool inRange;
 

@@ -1993,8 +1993,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1597854667820272761}
-  - component: {fileID: 1597854667820272767}
   - component: {fileID: 1597854667820272766}
+  - component: {fileID: 7665585857238321308}
   m_Layer: 0
   m_Name: CawsonModel
   m_TagString: Untagged
@@ -2020,19 +2020,6 @@ Transform:
   m_Father: {fileID: 1597854667934669875}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1597854667820272767
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597854667820272760}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.3382907, y: 3.0607834, z: 1.6932127}
-  m_Center: {x: 1.1691453, y: 1.8620949, z: -0.02710874}
 --- !u!95 &1597854667820272766
 Animator:
   serializedVersion: 4
@@ -2053,6 +2040,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &7665585857238321308
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597854667820272760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 4
+  m_Direction: 1
+  m_Center: {x: -0.5, y: 2, z: 0}
 --- !u!1 &1597854667874156203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,6 +2644,7 @@ GameObject:
   - component: {fileID: 1597854668447493207}
   - component: {fileID: 1597854668447493206}
   - component: {fileID: 1597854668447493201}
+  - component: {fileID: 4929137803979172097}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2800,6 +2802,20 @@ MonoBehaviour:
   playerObj: {fileID: 1597854667820272761}
   rb: {fileID: 1597854667687605254}
   rotationSpeed: 7
+--- !u!114 &4929137803979172097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597854668447493203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac68bb07652a5124490cadea21e0fec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: {fileID: 0}
+  cameraCollider: {fileID: 0}
 --- !u!1 &1597854668451923240
 GameObject:
   m_ObjectHideFlags: 0
