@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
+    //TEST GROUP:
+    public Transform player;
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -48,7 +52,9 @@ public class PlayerMovement : MonoBehaviour
 
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
+
         moveDirection = new Vector3(moveX * moveSpeed, moveDirection.y, moveZ * moveSpeed);
+
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= walkSpeed;
 
