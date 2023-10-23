@@ -15,6 +15,7 @@ public bool scarecrowStrawQuestActive = false;
 public bool scarecrowButtonQuestActive = false;
 public bool scarecrowHatQuestActive = false;
 public bool MushIconActive = false;
+public bool ChipIconActive = false;
 public DialogueRunner dialogueRunner;
 
  void Start()
@@ -31,6 +32,7 @@ public DialogueRunner dialogueRunner;
     dialogueRunner.AddCommandHandler("ScarecrowButtonSwitch", ScarecrowButtonSwitch);
     dialogueRunner.AddCommandHandler("ScarecrowHatSwitch", ScarecrowHatSwitch);
     dialogueRunner.AddCommandHandler("MushIcon", MushIconSwitch);
+    dialogueRunner.AddCommandHandler("ChipIcon", ChipIconSwitch);
     
  }
 
@@ -170,6 +172,19 @@ public DialogueRunner dialogueRunner;
             MushIconActive = false;
         }
 
-    }    
+    }
 
+        public void ChipIconSwitch()
+    {
+        if (ChipIconActive == false)
+        {
+            ChipIconActive = true;
+            Debug.Log("quest switch chip");
+        }
+        else
+        {
+            ChipIconActive = false;
+        }
+
+    }    
 }

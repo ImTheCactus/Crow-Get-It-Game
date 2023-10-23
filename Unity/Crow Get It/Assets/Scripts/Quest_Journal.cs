@@ -18,7 +18,7 @@ public class Quest_Journal : MonoBehaviour
     public GameObject ScarecrowButtonQuest;
     public GameObject ScarecrowHatQuest;
     public GameObject MushIcon;
-    
+    public GameObject ChipIcon;
 
     public CustomYarnCommands customYarnCommands;
 
@@ -32,6 +32,7 @@ public class Quest_Journal : MonoBehaviour
     bool scarecrowButtonQuestActive = false;
     bool scarecrowHatQuestActive = false;
     bool MushIconActive = false;
+    bool ChipIconActive = false;
 
     private bool isOpen;
 
@@ -49,6 +50,7 @@ public class Quest_Journal : MonoBehaviour
         ScarecrowButtonQuest.SetActive(false);
         ScarecrowHatQuest.SetActive(false);
         MushIcon.SetActive(false);
+        ChipIcon.SetActive(false);
        
     }
 
@@ -177,6 +179,15 @@ public class Quest_Journal : MonoBehaviour
         else if (customYarnCommands.MushIconActive == false)
         {
             MushIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.ChipIconActive == true)
+        {
+            ChipIcon.SetActive(true);
+        }
+        else if (customYarnCommands.ChipIconActive == false)
+        {
+            ChipIcon.SetActive(false);
         }
 
     }

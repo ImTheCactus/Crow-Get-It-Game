@@ -5,6 +5,7 @@
     ?: GGGGGRRRRRRRRRR my tummy hungy...
     <<set $FindingHoney to false>>
     <<jump ChipExitGrowl>>
+    <<ChipIcon>>
 
 <<else>>
     <<jump ChipIntro>>
