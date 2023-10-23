@@ -11202,7 +11202,7 @@ GameObject:
   - component: {fileID: 1107996401}
   - component: {fileID: 1107996400}
   m_Layer: 5
-  m_Name: Mush
+  m_Name: MushIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
