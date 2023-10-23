@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028398, g: 0.22571447, b: 0.3069222, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028447, g: 0.22571503, b: 0.3069233, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 41245410}
   - component: {fileID: 41245409}
   m_Layer: 5
-  m_Name: Chip Quest
+  m_Name: ChipQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUEST NAME
+  m_text: CUTE AS A BUTTON
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9, type: 2}
   m_sharedMaterial: {fileID: 2882365704415414404, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9,
@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 127709283}
   - component: {fileID: 127709282}
   m_Layer: 5
-  m_Name: ScareCrow Straw Quest
+  m_Name: ScarecrowStrawQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1205,11 +1205,11 @@ RectTransform:
   - {fileID: 1481545483}
   - {fileID: 1497710638}
   m_Father: {fileID: 1255649853}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -930}
+  m_AnchoredPosition: {x: 250, y: -710}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127709282
@@ -1262,7 +1262,7 @@ GameObject:
   - component: {fileID: 147403118}
   - component: {fileID: 147403117}
   m_Layer: 5
-  m_Name: Mush Quest
+  m_Name: MushQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 165901045}
   - component: {fileID: 165901044}
   m_Layer: 5
-  m_Name: Willow Quest
+  m_Name: WillowQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7772,7 +7772,7 @@ GameObject:
   - component: {fileID: 661340963}
   - component: {fileID: 661340962}
   m_Layer: 5
-  m_Name: ScareCrow Hat Quest
+  m_Name: ScarecrowHatQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7794,11 +7794,11 @@ RectTransform:
   - {fileID: 1492247503}
   - {fileID: 1957416087}
   m_Father: {fileID: 1255649853}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -820}
+  m_AnchoredPosition: {x: 250, y: -930}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661340962
@@ -9261,7 +9261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bring Me Stuff To Stuff
+  m_text: Find the scarecrows button eyes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9, type: 2}
   m_sharedMaterial: {fileID: 2882365704415414404, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9,
@@ -9692,8 +9692,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1165532763}
   m_HandleRect: {fileID: 1165532762}
   m_Direction: 2
-  m_Value: 0.9999996
-  m_Size: 0.4365918
+  m_Value: 0.9999997
+  m_Size: 0.43659174
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10487,7 +10487,7 @@ GameObject:
   - component: {fileID: 988139643}
   - component: {fileID: 988139642}
   m_Layer: 5
-  m_Name: Queenie Quest
+  m_Name: QueenieQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11539,7 +11539,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bring Me Stuff To Stuff
+  m_text: Find the scarecrows missing hat
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9, type: 2}
   m_sharedMaterial: {fileID: 2882365704415414404, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9,
@@ -11901,8 +11901,8 @@ RectTransform:
   m_Father: {fileID: 1214049794}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.56340814}
-  m_AnchorMax: {x: 1, y: 0.99999994}
+  m_AnchorMin: {x: 0, y: 0.5634081}
+  m_AnchorMax: {x: 1, y: 0.9999998}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12512,7 +12512,7 @@ GameObject:
   - component: {fileID: 1228884710}
   - component: {fileID: 1228884709}
   m_Layer: 5
-  m_Name: Bubbles Quest
+  m_Name: BubblesQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12836,9 +12836,9 @@ RectTransform:
   - {fileID: 1228884708}
   - {fileID: 1685155960}
   - {fileID: 165901043}
+  - {fileID: 127709281}
   - {fileID: 1946119896}
   - {fileID: 661340961}
-  - {fileID: 127709281}
   m_Father: {fileID: 850228255}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14957,7 +14957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUEST NAME
+  m_text: HAY DAY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9, type: 2}
   m_sharedMaterial: {fileID: 2882365704415414404, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9,
@@ -15093,7 +15093,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUEST NAME
+  m_text: HATS OFF
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9, type: 2}
   m_sharedMaterial: {fileID: 2882365704415414404, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9,
@@ -16854,7 +16854,7 @@ GameObject:
   - component: {fileID: 1685155962}
   - component: {fileID: 1685155961}
   m_Layer: 5
-  m_Name: Raph Quest
+  m_Name: RaphQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18455,7 +18455,7 @@ GameObject:
   - component: {fileID: 1879705129}
   - component: {fileID: 1879705128}
   m_Layer: 5
-  m_Name: Chip
+  m_Name: ChipIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19014,7 +19014,7 @@ GameObject:
   - component: {fileID: 1946119898}
   - component: {fileID: 1946119897}
   m_Layer: 5
-  m_Name: ScareCrow Button Quest
+  m_Name: ScarecrowButtonQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19036,11 +19036,11 @@ RectTransform:
   - {fileID: 53437878}
   - {fileID: 1120889800}
   m_Father: {fileID: 1255649853}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -710}
+  m_AnchoredPosition: {x: 250, y: -820}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1946119897
@@ -19755,7 +19755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bring Me Stuff To Stuff
+  m_text: Find some hay to stuff the scarecrow with
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9, type: 2}
   m_sharedMaterial: {fileID: 2882365704415414404, guid: 8c95a8e6c9fa3a6498f9dc6b45cc20f9,
