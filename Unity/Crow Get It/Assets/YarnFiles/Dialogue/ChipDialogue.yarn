@@ -44,14 +44,13 @@ title: ChipQuest
 ---
 <<if $FindingQueenie is true>>
     <<ChipIcon>>
-    
+
     Chip: Maybe if you follow the mushrooms you might find it!
     
 
 <<else>>
     Chip: Hey again, dearie.
     
-    <<ChipIcon>>
 <<endif>>
 
 -> How do you know Mush?  
@@ -60,26 +59,34 @@ title: ChipQuest
     <<jump ChipWhereLook>>
 -> Okay, thanks. 
     <<jump ChipExit>>
+    <<ChipIcon>>
 ===
 title: FriendMush
 ---
+    <<ChipIcon>>
     Chip: I brought them a peach.
     Chip: They're only small, but I can help by getting them off the trees
     <<jump ChipQuest>>
+    <<ChipIcon>>
 ===
 
 title: ChipWhereLook
 ---
+    <<ChipIcon>>
     Chip: Maybe if you backtrack down the hill you'll find some.
     <<jump ChipQuest>>
+    <<ChipIcon>>
 ===
 title: ChipExit
 ---
+    <<ChipIcon>>
     Chip: Good Luck!
+    <<ChipIcon>>
 ===
 
 title: ChipHoneyFound
 ---
+    <<ChipIcon>>
     Chip: Oooohhh! I smell honey!!! Did you manage to find some for me dearie?
     Chip: Thankyou so much!
     Chip: You know, if your up for something more, I heard that little Willow is hiding around here somewhere trying to find a some berries.

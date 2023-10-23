@@ -2,6 +2,7 @@
 position: -285,-670
 ---
 <<if $FlowerFound is false>>
+    <<QueenieIcon>>
     ?: Are you lost darling?
     ?: I dont get many visitors around here...
     Cawson: Just trying to help my friend Chip.
@@ -10,6 +11,7 @@ position: -285,-670
     <<set $FlowerFound to false>>
     <<QueenieQuestSwitch>>
     <<jump QueenieQuest>>
+    <<QueenieIcon>>
 <<else>>
     <<jump GiveHoney>>
 <<endif>>

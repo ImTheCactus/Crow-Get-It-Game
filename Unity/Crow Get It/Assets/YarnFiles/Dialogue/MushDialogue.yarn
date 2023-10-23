@@ -12,7 +12,9 @@
     Cawson: I'm Cawson, who are you?
     Mush: I'm Mush, you must be new here.
 <<else>>
+    <<MushIcon>>
     Mush: Hi again.
+    <<MushIcon>>
 <<endif>>
 
 <<if $FruitFound is false>>
@@ -31,8 +33,8 @@ title: MushQuest
     <<MushQuestSwitch>>
 
 <<else>>
+    
     Mush: Have you found any fruit yet?
-
 <<endif>>
 
 -> What kind of fruit are you looking for?  <<if !($FindingFruit is false)>>
@@ -41,9 +43,11 @@ title: MushQuest
     <<jump MushWhereLook>>
 -> I understand, thanks. 
     <<jump MushExit>>
+    <<MushIcon>>
 ===
 title: MushWhatFruit
 ---
+
     Mush: Well I like any fruit, can't be picky...
     Mush: But I do really like peaches!
     <<jump MushQuest>>
@@ -53,6 +57,7 @@ title: MushWhereLook
 ---
     Mush: Oh, um, maybe you can spot one from the path?
     <<jump MushQuest>>
+
 ===
 title: MushExit
 ---

@@ -16,6 +16,7 @@ public bool scarecrowButtonQuestActive = false;
 public bool scarecrowHatQuestActive = false;
 public bool MushIconActive = false;
 public bool ChipIconActive = false;
+public bool QueenieIconActive = false;
 public DialogueRunner dialogueRunner;
 
  void Start()
@@ -33,6 +34,7 @@ public DialogueRunner dialogueRunner;
     dialogueRunner.AddCommandHandler("ScarecrowHatSwitch", ScarecrowHatSwitch);
     dialogueRunner.AddCommandHandler("MushIcon", MushIconSwitch);
     dialogueRunner.AddCommandHandler("ChipIcon", ChipIconSwitch);
+    dialogueRunner.AddCommandHandler("QueenieIcon", QueenieIconSwitch);
     
  }
 
@@ -187,4 +189,18 @@ public DialogueRunner dialogueRunner;
         }
 
     }    
+
+            public void QueenieIconSwitch()
+    {
+        if (QueenieIconActive == false)
+        {
+            QueenieIconActive = true;
+            Debug.Log("quest switch queenie");
+        }
+        else
+        {
+            QueenieIconActive = false;
+        }
+
+    }  
 }
