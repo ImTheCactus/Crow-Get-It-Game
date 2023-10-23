@@ -4,6 +4,7 @@
     <<set $FindingFruit to false>>
     <<set $FruitFound to false>>
     <<set $FindingChip to false>>
+    <<MushIcon>>
 
     ?: Hello...
     Player: Hi!

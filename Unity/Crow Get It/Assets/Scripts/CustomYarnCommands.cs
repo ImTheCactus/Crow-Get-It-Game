@@ -14,6 +14,7 @@ public bool willowQuestActive = false;
 public bool scarecrowStrawQuestActive = false;
 public bool scarecrowButtonQuestActive = false;
 public bool scarecrowHatQuestActive = false;
+public bool MushIconActive = false;
 public DialogueRunner dialogueRunner;
 
  void Start()
@@ -29,6 +30,7 @@ public DialogueRunner dialogueRunner;
     dialogueRunner.AddCommandHandler("ScarecrowStrawSwitch", ScarecrowStrawSwitch);
     dialogueRunner.AddCommandHandler("ScarecrowButtonSwitch", ScarecrowButtonSwitch);
     dialogueRunner.AddCommandHandler("ScarecrowHatSwitch", ScarecrowHatSwitch);
+    dialogueRunner.AddCommandHandler("MushIcon", MushIconSwitch);
     
  }
 
@@ -155,6 +157,19 @@ public DialogueRunner dialogueRunner;
             scarecrowHatQuestActive  = false;
         }
     }
+    
+        public void MushIconSwitch()
+    {
+        if (MushIconActive == false)
+        {
+            MushIconActive = true;
+            Debug.Log("quest switch mush");
+        }
+        else
+        {
+            MushIconActive = false;
+        }
 
+    }    
 
 }
