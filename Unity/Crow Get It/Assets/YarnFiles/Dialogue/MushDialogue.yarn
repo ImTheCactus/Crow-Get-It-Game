@@ -57,14 +57,17 @@ title: MushWhereLook
 title: MushExit
 ---
     Mush: Oh okay, bye.
+    <<MushIcon>>
 ===
 
 title: MushFruitFound
 ---
+    <<MushIcon>>
     Mush: Hey you found one!
     Mush: And it's my favorite!
     Mush: You've been so helpful, my friend Chip could sure use your help.
     Mush: She looks scary but shes very forgetful, even if crows were tasty she wouldn't remember that.
     <<set $FindingChip to true>>
     <<MushQuestSwitch>>
+    <<MushIcon>>
 ===

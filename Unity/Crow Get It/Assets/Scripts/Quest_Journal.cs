@@ -172,6 +172,8 @@ public class Quest_Journal : MonoBehaviour
              ScarecrowHatQuest.SetActive(false);
         }
 
+        //This is icon code!
+
         if (customYarnCommands.MushIconActive == true)
         {
             MushIcon.SetActive(true);
