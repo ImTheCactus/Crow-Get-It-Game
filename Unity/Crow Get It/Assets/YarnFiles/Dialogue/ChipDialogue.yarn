@@ -4,9 +4,9 @@
 <<if $FindingChip is false>>
     <<ChipIcon>>
     ?: GGGGGRRRRRRRRRR my tummy hungy...
+    <<ChipIcon>>
     <<set $FindingHoney to false>>
     <<jump ChipExitGrowl>>
-    <<ChipIcon>>
 
 <<else>>
     <<jump ChipIntro>>
@@ -43,14 +43,13 @@ title: ChipIntro
 title: ChipQuest
 ---
 <<if $FindingQueenie is true>>
-    <<ChipIcon>>
-
     Chip: Maybe if you follow the mushrooms you might find it!
     
 
 <<else>>
+    <<ChipIcon>>
     Chip: Hey again, dearie.
-    
+    <<ChipIcon>>
 <<endif>>
 
 -> How do you know Mush?  
@@ -59,27 +58,27 @@ title: ChipQuest
     <<jump ChipWhereLook>>
 -> Okay, thanks. 
     <<jump ChipExit>>
-    <<ChipIcon>>
+
 ===
 title: FriendMush
 ---
-    <<ChipIcon>>
+
     Chip: I brought them a peach.
     Chip: They're only small, but I can help by getting them off the trees
     <<jump ChipQuest>>
-    <<ChipIcon>>
+
 ===
 
 title: ChipWhereLook
 ---
-    <<ChipIcon>>
+
     Chip: Maybe if you backtrack down the hill you'll find some.
     <<jump ChipQuest>>
-    <<ChipIcon>>
+
 ===
 title: ChipExit
 ---
-    <<ChipIcon>>
+
     Chip: Good Luck!
     <<ChipIcon>>
 ===
@@ -101,5 +100,7 @@ title: ChipHoneyFound
 
 title: ChipExitGrowl
 ---
+<<ChipIcon>>
 ?: GRR?
+<<ChipIcon>>
 ===

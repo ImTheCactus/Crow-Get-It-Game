@@ -14,7 +14,7 @@
 <<else>>
     <<MushIcon>>
     Mush: Hi again.
-    <<MushIcon>>
+
 <<endif>>
 
 <<if $FruitFound is false>>
@@ -67,7 +67,7 @@ title: MushExit
 
 title: MushFruitFound
 ---
-    <<MushIcon>>
+
     Mush: Hey you found one!
     Mush: And it's my favorite!
     Mush: You've been so helpful, my friend Chip could sure use your help.
