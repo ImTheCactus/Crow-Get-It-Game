@@ -11,7 +11,7 @@ position: -285,-670
     <<set $FlowerFound to false>>
     <<QueenieQuestSwitch>>
     <<jump QueenieQuest>>
-    <<QueenieIcon>>
+
 <<else>>
     <<jump GiveHoney>>
 <<endif>>
@@ -28,7 +28,9 @@ position: -314,-191
     <<set $FindingFlower to true>>
 
 <<else>>
+    <<QueenieIcon>>
     Queenie: Hello again.
+    <<QueenieIcon>>
 <<endif>>
 
 -> What do you need me to do?
@@ -38,6 +40,7 @@ position: -314,-191
     <<jump WhereFlower>>
 
 -> See you soon!
+    <<QueenieIcon>>
     <<jump EndQueenie>>
 
 ===
@@ -63,9 +66,11 @@ position: -128,214
 title: GiveHoney
 position: -528,-427
 ---
+    <<QueenieIcon>>
     Queenie: Oh my DAYS!
     Queenie: You've actually found it!
     Queenie: Thank you sweetness, the honey is all yours!
+    <<QueenieIcon>>
     <<QueenieQuestSwitch>>
     <<set $EarntHoney to true>>
 ===
