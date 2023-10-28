@@ -20,6 +20,10 @@ public class Quest_Journal : MonoBehaviour
     public GameObject MushIcon;
     public GameObject ChipIcon;
     public GameObject QueenieIcon;
+    public GameObject WillowIcon;
+    public GameObject BubblesIcon;
+    public GameObject RaphIcon;
+    public GameObject ScarecrowIcon;
 
     public CustomYarnCommands customYarnCommands;
 
@@ -35,6 +39,10 @@ public class Quest_Journal : MonoBehaviour
     bool MushIconActive = false;
     bool ChipIconActive = false;
     bool QueenieIconActive = false;
+    bool WillowIconActive = false;
+    bool BubblesIconActive = false;
+    bool RaphIconActive = false;
+    bool ScarecrowIconActive = false;
 
     private bool isOpen;
 
@@ -54,6 +62,10 @@ public class Quest_Journal : MonoBehaviour
         MushIcon.SetActive(false);
         ChipIcon.SetActive(false);
         QueenieIcon.SetActive(false);
+        WillowIcon.SetActive(false);
+        BubblesIcon.SetActive(false);
+        RaphIcon.SetActive(false);
+        ScarecrowIcon.SetActive(false);
        
     }
 
@@ -202,6 +214,42 @@ public class Quest_Journal : MonoBehaviour
         else if (customYarnCommands.QueenieIconActive == false)
         {
             QueenieIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.WillowIconActive == true)
+        {
+            WillowIcon.SetActive(true);
+        }
+        else if (customYarnCommands.WillowIconActive == false)
+        {
+            WillowIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.BubblesIconActive == true)
+        {
+            BubblesIcon.SetActive(true);
+        }
+        else if (customYarnCommands.BubblesIconActive == false)
+        {
+            BubblesIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.RaphIconActive == true)
+        {
+            RaphIcon.SetActive(true);
+        }
+        else if (customYarnCommands.RaphIconActive == false)
+        {
+            RaphIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.ScarecrowIconActive == true)
+        {
+            ScarecrowIcon.SetActive(true);
+        }
+        else if (customYarnCommands.ScarecrowIconActive == false)
+        {
+            ScarecrowIcon.SetActive(false);
         }
 
     }

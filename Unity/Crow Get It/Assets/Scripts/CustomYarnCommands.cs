@@ -17,6 +17,10 @@ public bool scarecrowHatQuestActive = false;
 public bool MushIconActive = false;
 public bool ChipIconActive = false;
 public bool QueenieIconActive = false;
+public bool WillowIconActive = false;
+public bool BubblesIconActive = false;
+public bool RaphIconActive = false;
+public bool ScarecrowIconActive = false;
 public DialogueRunner dialogueRunner;
 
  void Start()
@@ -35,6 +39,10 @@ public DialogueRunner dialogueRunner;
     dialogueRunner.AddCommandHandler("MushIcon", MushIconSwitch);
     dialogueRunner.AddCommandHandler("ChipIcon", ChipIconSwitch);
     dialogueRunner.AddCommandHandler("QueenieIcon", QueenieIconSwitch);
+    dialogueRunner.AddCommandHandler("WillowIcon", WillowIconSwitch);
+    dialogueRunner.AddCommandHandler("BubblesIcon", BubblesIconSwitch);
+    dialogueRunner.AddCommandHandler("RaphIcon", RaphIconSwitch);
+    dialogueRunner.AddCommandHandler("ScarecrowIcon", ScarecrowIconSwitch);
     
  }
 
@@ -203,4 +211,60 @@ public DialogueRunner dialogueRunner;
         }
 
     }  
+            public void WillowIconSwitch()
+    {
+        if (WillowIconActive == false)
+        {
+            WillowIconActive = true;
+            Debug.Log("quest switch Willow");
+        }
+        else
+        {
+            WillowIconActive = false;
+        }
+
+    }  
+
+            public void BubblesIconSwitch()
+    {
+        if (BubblesIconActive == false)
+        {
+            BubblesIconActive = true;
+            Debug.Log("quest switch Bubbles");
+        }
+        else
+        {
+            BubblesIconActive = false;
+        }
+
+    } 
+
+            public void RaphIconSwitch()
+    {
+        if (RaphIconActive == false)
+        {
+            RaphIconActive = true;
+            Debug.Log("quest switch Raph");
+        }
+        else
+        {
+            RaphIconActive = false;
+        }
+
+    }  
+
+            public void ScarecrowIconSwitch()
+    {
+        if (ScarecrowIconActive == false)
+        {
+            ScarecrowIconActive = true;
+            Debug.Log("quest switch Scarecrow");
+        }
+        else
+        {
+            ScarecrowIconActive = false;
+        }
+
+    }   
+
 }
