@@ -35,7 +35,6 @@ title: ChipIntro
     <<ChipQuestSwitch>>
     <<set $FindingStraw to false>>
     <<jump ChipQuest>>
-    <<ChipIcon>>
 <<else>>
     <<jump ChipHoneyFound>>
 <<endif>>
