@@ -15,13 +15,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float gravity;
     [SerializeField] private float jumpHeight;
     private Rigidbody rb;
+    public float turn;
 
     //References:
     private CharacterController controller;
     private Animator anim;
-
-    //TEST GROUP:
     public Transform player;
+    public Camera camera;
 
 
     private void Start()
@@ -56,9 +56,16 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = new Vector3(moveX * moveSpeed, moveDirection.y, moveZ * moveSpeed);
 
         moveDirection = transform.TransformDirection(moveDirection);
+
         moveDirection *= walkSpeed;
 
-        if(isGrounded == true)
+        //Enables movement according to local (camera) axis.
+        //This chunk is only necessary for the PlayerNEW prefab and now PlayerOLD.
+        Quaternion projectedCamOrientation = camera.transform.rotation; //Copy the camera's rotation.
+        projectedCamOrientation = Quaternion.Euler(0, (projectedCamOrientation.eulerAngles.y + turn), 0); //Cancel out X and Z rotation.
+        moveDirection = projectedCamOrientation * moveDirection; //Apply rotation to vector.
+
+        if (isGrounded == true)
         {
             if (moveDirection != Vector3.zero)
             {
@@ -82,7 +89,6 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-
     private void Idle()
     {
         isGrounded = true;
@@ -94,7 +100,6 @@ public class PlayerMovement : MonoBehaviour
         moveSpeed = walkSpeed;
         anim.SetFloat("Speed", 1f, 0.1f, Time.deltaTime);
     }
-
     private void Jump()
     {
         isGrounded = true;
@@ -102,7 +107,6 @@ public class PlayerMovement : MonoBehaviour
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         isGrounded = false;
     }
-
     private IEnumerator Attack()
     {
         anim.SetLayerWeight(anim.GetLayerIndex("Attack Layer"), 1);
