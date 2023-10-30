@@ -6,6 +6,14 @@ using System.Collections;
 public class QuestSpritesActivation : MonoBehaviour
 {
     public GameObject MushExplenationSprite;
+    public GameObject ChipExplenationSprite;
+    public GameObject QueenieExplenationSprite;
+    public GameObject WillowExplenationSprite;
+    public GameObject BubblesExplenationSprite;
+    public GameObject RaphExplenationSprite;
+    public GameObject ScareExplenationSprite;
+    //sparkles
+
      public GameObject PeachSprite;
      public GameObject HoneySprite;
      public GameObject FlowerSprite;
@@ -19,9 +27,13 @@ public class QuestSpritesActivation : MonoBehaviour
     CharacterController controller;
 
     
-
-    //workin progress
     bool MExplenationSprite = true;
+    bool CExplenationSprite = true;
+    bool QExplenationSprite = true;
+    bool WExplenationSprite = true;
+    bool BExplenationSprite = true;
+    bool RExplenationSprite = true;
+    bool SExplenationSprite = true;
     //sparkles
     bool PeachSpriteActive = false;
     bool HoneySpriteSpriteActive = false;
@@ -33,6 +45,14 @@ public class QuestSpritesActivation : MonoBehaviour
     void Start()
     {
        MushExplenationSprite.SetActive(true);
+       ChipExplenationSprite.SetActive(true);
+       QueenieExplenationSprite.SetActive(true);
+       WillowExplenationSprite.SetActive(true);
+       BubblesExplenationSprite.SetActive(true);
+       RaphExplenationSprite.SetActive(true);
+       ScareExplenationSprite.SetActive(true);
+       
+       //Sprites
        PeachSprite.SetActive(false);
        HoneySprite.SetActive(false);
        FlowerSprite.SetActive(false);
@@ -56,6 +76,64 @@ public class QuestSpritesActivation : MonoBehaviour
         else if (customYarnCommands.MExplenationSprite == false)
         {
             MushExplenationSprite.SetActive(false);
+        }
+
+
+        if (customYarnCommands.CExplenationSprite == true)
+        {
+            ChipExplenationSprite.SetActive(true);
+        }
+        else if (customYarnCommands.CExplenationSprite == false)
+        {
+            ChipExplenationSprite.SetActive(false);
+        }
+
+
+        if (customYarnCommands.QExplenationSprite == true)
+        {
+            QueenieExplenationSprite.SetActive(true);
+        }
+        else if (customYarnCommands.QExplenationSprite == false)
+        {
+            QueenieExplenationSprite.SetActive(false);
+        }
+
+
+        if (customYarnCommands.WExplenationSprite == true)
+        {
+            WillowExplenationSprite.SetActive(true);
+        }
+        else if (customYarnCommands.WExplenationSprite == false)
+        {
+            WillowExplenationSprite.SetActive(false);
+        }
+
+
+        if (customYarnCommands.BExplenationSprite == true)
+        {
+            BubblesExplenationSprite.SetActive(true);
+        }
+        else if (customYarnCommands.BExplenationSprite == false)
+        {
+            BubblesExplenationSprite.SetActive(false);
+        }
+
+        if (customYarnCommands.RExplenationSprite == true)
+        {
+            RaphExplenationSprite.SetActive(true);
+        }
+        else if (customYarnCommands.RExplenationSprite == false)
+        {
+            RaphExplenationSprite.SetActive(false);
+        }
+
+        if (customYarnCommands.SExplenationSprite == true)
+        {
+            ScareExplenationSprite.SetActive(true);
+        }
+        else if (customYarnCommands.SExplenationSprite == false)
+        {
+            ScareExplenationSprite.SetActive(false);
         }
         //Sparkles
         

@@ -38,6 +38,7 @@ position: 7,-138
     Willow: I LOVE the colour of them and they’re the SWEETEST berries I ever tasted!
     <<set $FindingBerry to true>>
     <<WillowQuestSwitch>>
+    <<WExplenationSprite>>
 
 <<if $BerryFound is true>>
     

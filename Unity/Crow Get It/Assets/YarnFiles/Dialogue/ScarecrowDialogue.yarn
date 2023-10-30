@@ -16,6 +16,7 @@ tags:
     <<ScarecrowStrawSwitch>>
     <<ScarecrowButtonSwitch>>
     <<ScarecrowHatSwitch>>
+    <<SExplenationSprite>>
 
 <<else>>
     <<jump ScarecrowOption1>>

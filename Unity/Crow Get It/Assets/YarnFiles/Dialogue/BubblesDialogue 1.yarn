@@ -33,6 +33,7 @@ title: BubblesQuest
     
     Wait really! You would do that! For me?! Oh, thank you thank you, thank you.
     <<BubblesQuestSwitch>>
+    <<BExplenationSprite>>
 
         -> That’s okay.
             <<jump BubblesEnd>>
