@@ -5,7 +5,6 @@ position: -47,-415
 <<if visited("RaphDialogue") is false>>
     <<set $FindingFirefly to false>>
     <<set $FireflyFound to false>>
-    <<RaphIcon>>
     ?: Hello...
     Cawson: Who are you...
     ?: Who me?
@@ -14,7 +13,7 @@ position: -47,-415
     
 
 <<else>>
-    <<RaphIcon>>
+
     Raph: Hi again.
 
 <<endif>>
@@ -84,12 +83,12 @@ position: 165,78
     Raph: Heyooooo!
     Raph: Just so you know, I saw some REALLY RED and SHINY buttons somewhere around here! 
     Raph: I like red so I thought you might too!
-    <<RaphIcon>>
+    
 ===
 
 title: RaphEnd
 position: -354,6
 ---
     Get back soon!
-    <<RaphIcon>>
+    
 ===

@@ -2,7 +2,7 @@
 tags:
 ---
 <<if visited("ScarecrowDialogue") is false>>
-    <<ScarecrowIcon>>
+    
     Scarecrow: ... Hay-lo...
     Cawson: Are you okay?
     Scarecrow: n-no the farmer, he took me from my field...
@@ -91,5 +91,5 @@ title: AllItemsFound
 title: ScarecrowEnd
 ---
     Scarecrow: See you again soooon!
-    <<ScarecrowIcon>>
+
 ===
