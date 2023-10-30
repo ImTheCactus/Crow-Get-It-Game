@@ -302,7 +302,7 @@ public DialogueRunner dialogueRunner;
      //new stuff
     public void MExplenationSpriteSwitch()
     {
-        if (MExplenationSprite == true)
+        if (MExplenationSprite == false)
         {
            MExplenationSprite  = true;
             Debug.Log("ExplenationSprite");
