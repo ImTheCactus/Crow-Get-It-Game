@@ -38,7 +38,9 @@ position: -219,-230
 
     Raph: Oh, well it's nice to have some company!
     Player: Do you need anything?
-    Raph: Company and help! This is new for me. I'm really hungry but I haven’t seen any FIREFLIES recently. You think you could get some for me?
+    Raph: Company and help! This is new for me. I'm really hungry but I haven’t seen any FIREFLIES recently. 
+    Raph: They used to hang around down here but I think I scared them away higher in the cave...
+    Raph: You think you could get some for me?
 
     -> Of course!
         <<set $FindingFirefly to true>>
