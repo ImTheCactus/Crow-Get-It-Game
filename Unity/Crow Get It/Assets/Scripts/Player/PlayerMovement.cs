@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Enables movement according to local (camera) axis.
         //This chunk is only necessary for the PlayerNEW prefab and now PlayerOLD.
+
         Quaternion projectedCamOrientation = camera.transform.rotation; //Copy the camera's rotation.
         projectedCamOrientation = Quaternion.Euler(0, (projectedCamOrientation.eulerAngles.y + turn), 0); //Cancel out X and Z rotation.
         moveDirection = projectedCamOrientation * moveDirection; //Apply rotation to vector.

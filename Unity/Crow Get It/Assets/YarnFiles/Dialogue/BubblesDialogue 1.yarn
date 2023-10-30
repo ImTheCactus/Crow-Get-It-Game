@@ -5,6 +5,7 @@ tags:
     <<set $FindingUrchin to true>>
     <<set $UrchinFound to false>>
 
+    <<BubblesIcon>>
     ?: *Blublublublub* Hmm? *blublublublub*
     ?: Oh sorry, I thought I heard something..
     Bubbles: I was too busy making bubbles, hence the name hehe.
@@ -15,6 +16,7 @@ tags:
     
 
 <<else>>
+    <<BubblesIcon>>
     Bubbles: Hi again.
 <<endif>>
 
@@ -37,9 +39,8 @@ title: BubblesQuest
         -> Where can I find them?
             <<jump WhereFindUrchin>>
         -> Actually I dont really want to right now.
+            <<jump BubblesEnd>>
     
-    
-
     
 <<else>>
     Raph: Found anything yet?
@@ -61,7 +62,9 @@ The urchins tend to be under the bridge near the cave but maybe they moved.
 
 title: BubblesEnd
 ---
+
 Bubbles: You know where to find me.
+<<BubblesIcon>>
 ===
 
 title: BubblesOption
@@ -79,9 +82,11 @@ title: BubblesOption
 
 title: ButtonInfoBubbles
 ---
+    <<BubblesIcon>>
     Bubbles: Hey you!
     Bubbles: I saw something shiny near by here.
     Bubbles: Like some big red eyes?
     Bubbles: Maybe they were gems?
+    <<BubblesIcon>>
 ===
 

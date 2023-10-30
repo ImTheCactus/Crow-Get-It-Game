@@ -3,7 +3,7 @@ tags:
 position: 81,-522
 ---
 <<if visited("WillowDialogue") is false>> 
-    
+    <<WillowIcon>>
     ?: Hello! Hello! How are you? What are you up to? Are you having a good day?
     Cawson: Hello I’m Cawson who are you? 
     Willow: I’m Willow, like the tree!
@@ -20,6 +20,7 @@ position: 81,-522
 
 
 <<else>>
+    <<WillowIcon>>
     Willow: Hi again!
 <<endif>>
 
@@ -53,6 +54,7 @@ position: -309,11
 ---
 Willow: MMMM DELICIOUS! Just like I remember. Thank you so much!
 Willow: You know, I heard that the farmer left his hat somewhere around here, maybe you can find a use for it?
+<<WillowIcon>>
 <<set $FindingHat to true>>
 <<WillowQuestSwitch>>
 
@@ -62,4 +64,5 @@ title: WillowEnd
 position: 237,53
 ---
 Willow: If you wanna come back and say hi I'll be here under my tree.
+<<WillowIcon>>
 ===
