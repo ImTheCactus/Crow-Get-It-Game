@@ -43,6 +43,7 @@ position: -219,-230
     -> Of course!
         <<set $FindingFirefly to true>>
         <<RaphQuestSwitch>>
+        <<FriSparkle>>
         <<jump RaphEnd>>
     -> No I'm okay.
 

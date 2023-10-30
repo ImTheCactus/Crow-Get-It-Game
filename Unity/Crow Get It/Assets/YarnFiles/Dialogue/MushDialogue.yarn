@@ -31,6 +31,7 @@ title: MushQuest
     Mush: I'm looking for some fruit, do you mind helping me find some?
     <<set $FindingFruit to true>>
     <<MushQuestSwitch>>
+    <<PSparkle>>
 
 <<else>>
     

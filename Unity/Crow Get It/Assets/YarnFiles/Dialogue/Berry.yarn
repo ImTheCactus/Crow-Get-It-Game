@@ -7,6 +7,7 @@ tags:
     Hey! This is what Willow wanted.
     BERRY COLLECTED!
     <<set $BerryFound to true>>
+    <<BSparkle>>
 
 <<endif>>
 ===

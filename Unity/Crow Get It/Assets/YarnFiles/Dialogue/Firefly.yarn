@@ -7,6 +7,7 @@ tags:
     This is what Raph wanted!
     FIREFLY COLLECTED!
     <<set $FireflyFound to true>>
+    <<FriSparkle>>
 
 <<endif>>
 ===

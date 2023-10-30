@@ -8,5 +8,6 @@ tags:
     HONEY COLLECTED!
     <<set $HoneyFound to true>>
     <<hide Honey self>>
+    <<HSparkle>>
 <<endif>>
 ===

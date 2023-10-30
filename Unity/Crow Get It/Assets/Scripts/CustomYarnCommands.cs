@@ -21,6 +21,16 @@ public bool WillowIconActive = false;
 public bool BubblesIconActive = false;
 public bool RaphIconActive = false;
 public bool ScarecrowIconActive = false;
+
+//new stuff
+public bool MExplenationSprite = true;
+// sparkle
+public bool PeachSpriteActive = false;
+public bool HoneySpriteActive = false;
+public bool FlowerSpriteActive = false;
+public bool BerrySpriteActive = false;
+public bool UrchinSpriteActive = false;
+public bool FireflySpriteActive = false;
 public DialogueRunner dialogueRunner;
 
  void Start()
@@ -43,6 +53,15 @@ public DialogueRunner dialogueRunner;
     dialogueRunner.AddCommandHandler("BubblesIcon", BubblesIconSwitch);
     dialogueRunner.AddCommandHandler("RaphIcon", RaphIconSwitch);
     dialogueRunner.AddCommandHandler("ScarecrowIcon", ScarecrowIconSwitch);
+      //new stuff
+    dialogueRunner.AddCommandHandler("ExplenationSprite", MExplenationSpriteSwitch);
+    //sparkles
+    dialogueRunner.AddCommandHandler("PSparkle", PeachSPARSwitch);
+    dialogueRunner.AddCommandHandler("HSparkle", HoneySPARSwitch);
+    dialogueRunner.AddCommandHandler("FloSparkle", FlowerSPARSwitch);
+    dialogueRunner.AddCommandHandler("BSparkle", BerrySPARSwitch);
+    dialogueRunner.AddCommandHandler("USparkle", UrchinSPARSwitch);
+    dialogueRunner.AddCommandHandler("FirSparkle", FireflySPARSwitch);
     
  }
 
@@ -266,5 +285,106 @@ public DialogueRunner dialogueRunner;
         }
 
     }   
+
+
+     //new stuff
+    public void MExplenationSpriteSwitch()
+    {
+        if (MExplenationSprite == true)
+        {
+           MExplenationSprite  = true;
+            Debug.Log("ExplenationSprite");
+        }
+        else
+        {
+            MExplenationSprite  = false;
+        }
+        
+        
+    }
+
+  //Sparkles
+    public void PeachSPARSwitch()
+    {
+        if (PeachSpriteActive == false)
+        {
+           PeachSpriteActive  = true;
+            Debug.Log("Peachglitter");
+        }
+        else
+        {
+            PeachSpriteActive  = false;
+        }
+    }
+
+
+        public void HoneySPARSwitch()
+    {
+        if (HoneySpriteActive == false)
+        {
+           HoneySpriteActive  = true;
+            Debug.Log("honeyglitter");
+        }
+        else
+        {
+            HoneySpriteActive  = false;
+        }
+    }
+
+        public void FlowerSPARSwitch()
+    {
+        if (FlowerSpriteActive == false)
+        {
+           FlowerSpriteActive  = true;
+            Debug.Log("flowerglitter");
+        }
+        else
+        {
+            FlowerSpriteActive  = false;
+        }
+    }
+
+
+        public void BerrySPARSwitch()
+    {
+        if (BerrySpriteActive == false)
+        {
+           BerrySpriteActive  = true;
+            Debug.Log("berryglitter");
+        }
+        else
+        {
+            BerrySpriteActive  = false;
+        }
+    }
+
+
+        public void UrchinSPARSwitch()
+    {
+        if (UrchinSpriteActive == false)
+        {
+           UrchinSpriteActive  = true;
+            Debug.Log("urchinglitter");
+        }
+        else
+        {
+            UrchinSpriteActive  = false;
+        }
+    }
+
+
+        public void FireflySPARSwitch()
+    {
+        if (FireflySpriteActive == false)
+        {
+           FireflySpriteActive  = true;
+            Debug.Log("Fireflyglitter");
+        }
+        else
+        {
+            FireflySpriteActive  = false;
+        }
+    }
+
 
 }
