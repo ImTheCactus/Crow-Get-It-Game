@@ -2,7 +2,7 @@
 tags:
 ---
 <<if visited("ScarecrowDialogue") is false>>
-    
+    <<ScarecrowIcon>>
     Scarecrow: ... Hay-lo...
     Cawson: Are you okay?
     Scarecrow: n-no the farmer, he took me from my field...
@@ -10,6 +10,7 @@ tags:
     Scarecrow: HELP ME I'M SCARED CROW!
     Cawson: It's okay. What do you need?
     Scarecrow: I can't see, I'm hungry and if I go out in the field like this my head will burn...
+    <<ScarecrowIcon>>
     <<set $FindingStraw to true>>
     <<set $FindingButton to true>>
     <<set $FindingHat to true>>
@@ -26,9 +27,10 @@ tags:
 title: ScarecrowOption1
 ---
 <<if $FoundStuffing is false>>
-
+    <<ScarecrowIcon>>
     Scarecrow: Hay-lp me!
     Scarecrow: Hurry!
+    <<ScarecrowIcon>>
 
 
 <<else>>
