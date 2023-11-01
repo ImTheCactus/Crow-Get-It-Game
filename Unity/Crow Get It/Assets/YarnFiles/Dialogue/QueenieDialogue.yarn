@@ -10,6 +10,7 @@ position: -285,-670
     <<set $FindingFlower to false>>
     <<set $FlowerFound to false>>
     <<QueenieQuestSwitch>>
+    <<QExplenationSprite>>
     <<jump QueenieQuest>>
 
 <<else>>

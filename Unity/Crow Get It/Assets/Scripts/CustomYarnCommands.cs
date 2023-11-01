@@ -24,6 +24,12 @@ public bool ScarecrowIconActive = false;
 
 //new stuff
 public bool MExplenationSprite = true;
+public bool CExplenationSprite = true;
+public bool QExplenationSprite = true;
+public bool WExplenationSprite = true;
+public bool BExplenationSprite = true;
+public bool RExplenationSprite = true;
+public bool SExplenationSprite = true;
 // sparkle
 public bool PeachSpriteActive = false;
 public bool HoneySpriteActive = false;
@@ -54,7 +60,13 @@ public DialogueRunner dialogueRunner;
     dialogueRunner.AddCommandHandler("RaphIcon", RaphIconSwitch);
     dialogueRunner.AddCommandHandler("ScarecrowIcon", ScarecrowIconSwitch);
       //new stuff
-    dialogueRunner.AddCommandHandler("ExplenationSprite", MExplenationSpriteSwitch);
+    dialogueRunner.AddCommandHandler("MExplenationSprite", MExplenationSpriteSwitch);
+    dialogueRunner.AddCommandHandler("CExplenationSprite", CExplenationSpriteSwitch);
+    dialogueRunner.AddCommandHandler("QExplenationSprite", QExplenationSpriteSwitch);
+    dialogueRunner.AddCommandHandler("WExplenationSprite", WExplenationSpriteSwitch);
+    dialogueRunner.AddCommandHandler("BExplenationSprite", BExplenationSpriteSwitch);
+    dialogueRunner.AddCommandHandler("RExplenationSprite", RExplenationSpriteSwitch);
+    dialogueRunner.AddCommandHandler("SExplenationSprite", SExplenationSpriteSwitch);
     //sparkles
     dialogueRunner.AddCommandHandler("PSparkle", PeachSPARSwitch);
     dialogueRunner.AddCommandHandler("HSparkle", HoneySPARSwitch);
@@ -290,7 +302,7 @@ public DialogueRunner dialogueRunner;
      //new stuff
     public void MExplenationSpriteSwitch()
     {
-        if (MExplenationSprite == true)
+        if (MExplenationSprite == false)
         {
            MExplenationSprite  = true;
             Debug.Log("ExplenationSprite");
@@ -298,6 +310,101 @@ public DialogueRunner dialogueRunner;
         else
         {
             MExplenationSprite  = false;
+        }
+        
+        
+    }
+
+       public void CExplenationSpriteSwitch()
+    {
+        if (CExplenationSprite == false)
+        {
+           CExplenationSprite  = true;
+            Debug.Log("ExplenationSprite");
+        }
+        else
+        {
+            CExplenationSprite  = false;
+        }
+        
+        
+    }
+
+
+    public void QExplenationSpriteSwitch()
+    {
+        if (QExplenationSprite == false)
+        {
+           QExplenationSprite  = true;
+            Debug.Log("ExplenationSprite");
+        }
+        else
+        {
+            QExplenationSprite  = false;
+        }
+        
+        
+    }
+
+
+        public void WExplenationSpriteSwitch()
+    {
+        if (WExplenationSprite == false)
+        {
+           WExplenationSprite  = true;
+            Debug.Log("ExplenationSprite");
+        }
+        else
+        {
+            WExplenationSprite  = false;
+        }
+        
+        
+    }
+
+
+        public void BExplenationSpriteSwitch()
+    {
+        if (BExplenationSprite == false)
+        {
+           BExplenationSprite  = true;
+            Debug.Log("ExplenationSprite");
+        }
+        else
+        {
+            BExplenationSprite  = false;
+        }
+        
+        
+    }
+
+
+        public void RExplenationSpriteSwitch()
+    {
+        if (RExplenationSprite == false)
+        {
+           RExplenationSprite  = true;
+            Debug.Log("ExplenationSprite");
+        }
+        else
+        {
+            RExplenationSprite  = false;
+        }
+        
+        
+    }
+
+
+        public void SExplenationSpriteSwitch()
+    {
+        if (SExplenationSprite == false)
+        {
+           SExplenationSprite  = true;
+            Debug.Log("ExplenationSprite");
+        }
+        else
+        {
+            SExplenationSprite  = false;
         }
         
         

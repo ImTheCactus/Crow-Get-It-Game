@@ -33,6 +33,7 @@ title: ChipIntro
     <<set $HoneyFound to false>>
     <<set $FindingQueenie to true>>
     <<ChipQuestSwitch>>
+    <<CExplenationSprite>>
     <<set $FindingStraw to false>>
     <<jump ChipQuest>>
 <<else>>
