@@ -23,17 +23,20 @@ public class PlayerMovement : MonoBehaviour
     public Transform player;
     public Camera camera;
 
+    public bool inDialogue = false;
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
+        inDialogue = false;
     }
 
     private void Update()
     {
-        Move();
+        Move();   
 
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -49,7 +52,8 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-
+if (inDialogue == false)
+{
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
 
@@ -66,13 +70,14 @@ public class PlayerMovement : MonoBehaviour
         Quaternion projectedCamOrientation = camera.transform.rotation; //Copy the camera's rotation.
         projectedCamOrientation = Quaternion.Euler(0, (projectedCamOrientation.eulerAngles.y + turn), 0); //Cancel out X and Z rotation.
         moveDirection = projectedCamOrientation * moveDirection; //Apply rotation to vector.
-    
+}
 
         if (isGrounded == true)
         {
             if (moveDirection != Vector3.zero)
             {
-                Walk();
+                 Walk();               
+            
             }
 
             else if (moveDirection == Vector3.zero)
@@ -87,9 +92,11 @@ public class PlayerMovement : MonoBehaviour
                 Jump();
             }
         }
+
         controller.Move(moveDirection * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
     }
 
     private void Idle()
@@ -100,7 +107,9 @@ public class PlayerMovement : MonoBehaviour
     private void Walk()
     {
         isGrounded = true;
+
         moveSpeed = walkSpeed;
+        
         anim.SetFloat("Speed", 1f, 0.1f, Time.deltaTime);
     }
     private void Jump()

@@ -5,6 +5,7 @@
     <<set $FruitFound to false>>
     <<set $FindingChip to false>>
     <<MushIcon>>
+    <<PlayerFrezze>>
 
     ?: Hello...
     Player: Hi!
@@ -13,6 +14,7 @@
     Mush: I'm Mush, you must be new here.
 <<else>>
     <<MushIcon>>
+    <<PlayerFrezze>>
     Mush: Hi again.
 
 <<endif>>
@@ -46,6 +48,7 @@ title: MushQuest
 -> I understand, thanks. 
     <<jump MushExit>>
     <<MushIcon>>
+
 ===
 title: MushWhatFruit
 ---
@@ -65,6 +68,7 @@ title: MushExit
 ---
     Mush: Oh okay, bye.
     <<MushIcon>>
+    <<PlayerFrezze>>
 ===
 
 title: MushFruitFound
@@ -77,4 +81,5 @@ title: MushFruitFound
     <<set $FindingChip to true>>
     <<MushQuestSwitch>>
     <<MushIcon>>
+    <<PlayerFrezze>>
 ===

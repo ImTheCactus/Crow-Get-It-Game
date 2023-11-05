@@ -5,6 +5,9 @@ using Yarn.Unity;
 
 public class CustomYarnCommands : MonoBehaviour
 {
+public PlayerMovement playerMovement;
+public bool Pcontroller = true;
+
 public bool mushQuestActive = false;
 public bool chipQuestActive = false;
 public bool queenieQuestActive = false;
@@ -43,6 +46,8 @@ public DialogueRunner dialogueRunner;
  {
     //Custom Yarn commands           (Name for in yarn, function to run)
     // Name for in Yarn [CAN] be differant to the function name
+    dialogueRunner.AddCommandHandler("PlayerFrezze", PlayerFrezze);
+
     dialogueRunner.AddCommandHandler("MushQuestSwitch", MushQuestSwitch);
     dialogueRunner.AddCommandHandler("ChipQuestSwitch", ChipQuestSwitch);
     dialogueRunner.AddCommandHandler("QueenieQuestSwitch", QueenieQuestSwitch);
@@ -490,6 +495,19 @@ public DialogueRunner dialogueRunner;
         else
         {
             FireflySpriteActive  = false;
+        }
+    }
+
+         public void PlayerFrezze()
+    {
+        if (playerMovement.inDialogue == false)
+        {
+           playerMovement.inDialogue  = true;
+            Debug.Log("Frezze");
+        }
+        else
+        {
+            playerMovement.inDialogue  = false;
         }
     }
 

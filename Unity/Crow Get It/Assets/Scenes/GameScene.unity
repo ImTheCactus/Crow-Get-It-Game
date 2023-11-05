@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028456, g: 0.22571497, b: 0.3069233, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028447, g: 0.22571503, b: 0.3069233, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16939,6 +16939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca85b23c1587174bbc261b0f1e15408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 1651763277645931204}
+  Pcontroller: 1
   mushQuestActive: 0
   chipQuestActive: 0
   queenieQuestActive: 0
@@ -22500,6 +22502,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 472997320180995845}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1651763277645931204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1187914001582355893, guid: 0424f446ba8fc9043a1864cf4e1052f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 472997320180995845}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651763277645931199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fada723daaadb484cafd1e6e458f2d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &2065510073377876682
 Animator:
   serializedVersion: 4
@@ -24296,6 +24310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321a26d9a160a4f84c8b1b95b7dbd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 1651763277645931204}
+  customYarnCommands: {fileID: 1620856982}
   MushExplenationSprite: {fileID: 5524402077276700783}
   ChipExplenationSprite: {fileID: 3436007923570990324}
   QueenieExplenationSprite: {fileID: 4455709047153014644}
@@ -24309,8 +24325,7 @@ MonoBehaviour:
   BerrySprite: {fileID: 4588672186363100746}
   UrchinSprite: {fileID: 4588672187471016297}
   FireflySprite: {fileID: 4588672186789826247}
-  player: {fileID: 0}
-  customYarnCommands: {fileID: 1620856982}
+  player: {fileID: 1651763277645931199}
 --- !u!1 &4588672187463125365
 GameObject:
   m_ObjectHideFlags: 0

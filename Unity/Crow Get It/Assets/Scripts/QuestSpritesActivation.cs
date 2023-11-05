@@ -5,6 +5,8 @@ using System.Collections;
 
 public class QuestSpritesActivation : MonoBehaviour
 {
+    public PlayerMovement playerMovement;
+    public CustomYarnCommands customYarnCommands;
     public GameObject MushExplenationSprite;
     public GameObject ChipExplenationSprite;
     public GameObject QueenieExplenationSprite;
@@ -22,10 +24,8 @@ public class QuestSpritesActivation : MonoBehaviour
      public GameObject FireflySprite;
      public GameObject player;
 
-    public CustomYarnCommands customYarnCommands;
 
-    CharacterController controller;
-
+    bool Pcontroller = true;
     
     bool MExplenationSprite = true;
     bool CExplenationSprite = true;
@@ -44,6 +44,8 @@ public class QuestSpritesActivation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerMovement.inDialogue = false;
+
        MushExplenationSprite.SetActive(true);
        ChipExplenationSprite.SetActive(true);
        QueenieExplenationSprite.SetActive(true);
@@ -69,6 +71,8 @@ public class QuestSpritesActivation : MonoBehaviour
    
     public void SpriteCheck ()
     {
+
+        
         if (customYarnCommands.MExplenationSprite == true)
         {
             MushExplenationSprite.SetActive(true);
@@ -196,6 +200,17 @@ public class QuestSpritesActivation : MonoBehaviour
         {
             FireflySprite.SetActive(false);
         }
+
+
+        
+       /* if (customYarnCommands.Pcontroller == true)
+        {
+            playerMovement.inDialogue = true;
+        }
+        else if (customYarnCommands.Pcontroller == false)
+        {
+            playerMovement.inDialogue = false;
+        }*/
 
     }
 }
