@@ -7,6 +7,7 @@ tags:
     These must be the Scarecrows eyes!
     BUTTONS COLLECTED!
     <<set $FoundButtons to true>>
+    <<ButtonCollected>>
 
 <<endif>>
 ===

@@ -8,6 +8,7 @@ tags:
     BERRY COLLECTED!
     <<set $BerryFound to true>>
     <<BSparkle>>
+    <<BerryCollected>>
 
 <<endif>>
 ===

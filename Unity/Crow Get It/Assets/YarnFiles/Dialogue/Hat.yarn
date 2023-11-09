@@ -7,6 +7,7 @@ tags:
     Maybe I can bring this back to the Scarecrow.
     HAT COLLECTED!
     <<set $FoundHat to true>>
+    <<HatCollected>>
 
 <<endif>>
 ===

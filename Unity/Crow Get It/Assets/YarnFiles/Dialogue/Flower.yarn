@@ -8,6 +8,7 @@ tags:
     FLOWER COLLECTED!
     <<set $FlowerFound to true>>
     <<FloSparkle>>
+    <<FlowerCollected>>
 
 <<endif>>
 ===

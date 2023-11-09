@@ -8,6 +8,7 @@ tags:
     FIREFLY COLLECTED!
     <<set $FireflyFound to true>>
     <<FriSparkle>>
+    <<FireflyCollected>>
 
 <<endif>>
 ===
