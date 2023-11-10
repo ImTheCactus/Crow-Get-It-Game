@@ -3,13 +3,17 @@ tags:
 ---
 <<if $FindingUrchin is false>>
     <<UrchinIcon>>
+    <<PlayerFrezze>>
     That looks pointy. Ouchie!
     <<UrchinIcon>>
+    <<PlayerFrezze>>
 <<else>>
     <<UrchinIcon>>
+    <<PlayerFrezze>>
     This is what Bubbles wanted!
     URCHIN COLLECTED!
     <<UrchinIcon>>
+    <<PlayerFrezze>>
     <<set $UrchinFound to true>>
     <<USparkle>>
     <<UrchinCollected>>

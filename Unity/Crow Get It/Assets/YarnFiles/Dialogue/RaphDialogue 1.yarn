@@ -6,6 +6,7 @@ position: -47,-415
     <<set $FindingFirefly to false>>
     <<set $FireflyFound to false>>
     <<RaphIcon>>
+    <<PlayerFrezze>>
     ?: Hello...
     Cawson: Who are you...
     ?: Who me?
@@ -15,7 +16,9 @@ position: -47,-415
 
 <<else>>
     <<RaphIcon>>
+    <<PlayerFrezze>>
     Raph: Hi again.
+    <<PlayerFrezze>>
 
 <<endif>>
 
@@ -96,6 +99,7 @@ position: -354,6
 ---
     Get back soon!
     <<RaphIcon>>
+    <<PlayerFrezze>>
     <<FirSparkle>>
     
 ===

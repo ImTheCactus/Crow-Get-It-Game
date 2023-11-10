@@ -2,17 +2,21 @@
 ---
 <<if $FindingFruit is false>>
     <<PeachIcon>>
+    <<PlayerFrezze>>
     Its a peach
     <<PeachIcon>>
+    <<PlayerFrezze>>
 <<else>>
 <<PeachIcon>>
+<<PlayerFrezze>>
     Hey! This is what Mush wanted.
     PEACH COLLECTED!
     <<PeachIcon>>
+    <<PlayerFrezze>>
     <<set $FruitFound to true>>
-        <<hide Peach self>>
-         <<PSparkle>>
-         <<PeachCollected>>
+    <<hide Peach self>>
+    <<PSparkle>>
+    <<PeachCollected>>
 
 <<endif>>
 ===

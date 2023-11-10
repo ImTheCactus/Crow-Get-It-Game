@@ -3,6 +3,7 @@
 ---
 <<if $FindingChip is false>>
     <<ChipIcon>>
+    <<PlayerFrezze>>
     ?: GGGGGRRRRRRRRRR my tummy hungy...
     <<ChipIcon>>
     <<set $FindingHoney to false>>
@@ -21,6 +22,7 @@ title: ChipIntro
 
 <<if $EarntHoney is false>> 
     <<ChipIcon>>
+    <<PlayerFrezze>>
     Chip: Hello!
     Cawson: Hello, your friend Mush said that you need help with something.
     Chip: Oh you know Mush, do you dear?
@@ -82,17 +84,20 @@ title: ChipExit
     Chip: Good Luck!
     <<ChipIcon>>
     <<HSparkle>>
+    <<PlayerFrezze>>
 ===
 
 title: ChipHoneyFound
 ---
     <<ChipIcon>>
+    <<PlayerFrezze>>
     Chip: Oooohhh! I smell honey!!! Did you manage to find some for me dearie?
     Chip: Thankyou so much!
     Chip: You know, if your up for something more, I heard that little Willow is hiding around here somewhere trying to find a some berries.
     Chip: Maybe you could find them?
     Chip: Or if you want to explore a little more, The wheat field is very pretty this time of year!
     <<ChipQuestSwitch>>
+    <<PlayerFrezze>>
     <<set $findingBerry to true>>
     <<set $FindingStraw to true>>
     <<ChipIcon>>
@@ -104,4 +109,5 @@ title: ChipExitGrowl
 <<ChipIcon>>
 ?: GRR?
 <<ChipIcon>>
+<<PlayerFrezze>>
 ===

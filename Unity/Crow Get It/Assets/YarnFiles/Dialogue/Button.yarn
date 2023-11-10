@@ -3,13 +3,17 @@ tags:
 ---
 <<if $FindingButton is false>>
     <<ButtonIcon>>
+    <<PlayerFrezze>>
     A pair of buttons?
     <<ButtonIcon>>
+    <<PlayerFrezze>>
 <<else>>
     <<ButtonIcon>>
+    <<PlayerFrezze>>
     These must be the Scarecrows eyes!
     BUTTONS COLLECTED!
     <<ButtonIcon>>
+    <<PlayerFrezze>>
     <<set $FoundButtons to true>>
     <<ButtonCollected>>
 

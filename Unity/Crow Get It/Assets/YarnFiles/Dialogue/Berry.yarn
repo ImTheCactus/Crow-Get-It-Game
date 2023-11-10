@@ -3,15 +3,19 @@ tags:
 ---
 <<if $FindingBerry is false>>
     <<BerryIcon>>
+    <<PlayerFrezze>>
     That's a cool colour.
-        <<BerryIcon>>
+    <<BerryIcon>>
+    <<PlayerFrezze>>
 <<else>>
     <<BerryIcon>>
+    <<PlayerFrezze>>
     Hey! This is what Willow wanted.
     BERRY COLLECTED!
     <<BerryIcon>>
-    <<set $BerryFound to true>>
     <<BSparkle>>
+    <<PlayerFrezze>>
+    <<set $BerryFound to true>>
     <<BerryCollected>>
 
 <<endif>>

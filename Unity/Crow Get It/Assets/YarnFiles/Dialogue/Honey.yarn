@@ -3,13 +3,17 @@ tags:
 ---
 <<if $EarntHoney is false>>
     <<HoneyIcon>>
+    <<PlayerFrezze>>
     You cant take this yet...
     <<HoneyIcon>>
+    <<PlayerFrezze>>
 <<else>>
     <<HoneyIcon>>
+    <<PlayerFrezze>>
     Thanks Queenie, I'll say hi to Chip for you.
     HONEY COLLECTED!
     <<HoneyIcon>>
+    <<PlayerFrezze>>
     <<set $HoneyFound to true>>
     <<hide Honey self>>
     <<HSparkle>>

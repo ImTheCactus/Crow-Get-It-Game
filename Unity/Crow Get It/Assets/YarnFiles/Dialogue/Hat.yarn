@@ -3,13 +3,17 @@ tags:
 ---
 <<if $FindingHat is false>>
     <<HatIcon>>
+    <<PlayerFrezze>>
     That's way too big for me, I wonder who it belongs to...
     <<HatIcon>>
+    <<PlayerFrezze>>
 <<else>>
     <<HatIcon>>
+    <<PlayerFrezze>>
     Maybe I can bring this back to the Scarecrow.
     HAT COLLECTED!
     <<HatIcon>>
+    <<PlayerFrezze>>
     <<set $FoundHat to true>>
     <<HatCollected>>
 

@@ -3,13 +3,17 @@ tags:
 ---
 <<if $FindingFirefly is false>>
     <<FireflyIcon>>
+    <<PlayerFrezze>>
     The Firefly buzzes softly in the air.
     <<FireflyIcon>>
+    <<PlayerFrezze>>
 <<else>>
     <<FireflyIcon>>
+    <<PlayerFrezze>>
     This is what Raph wanted!
     FIREFLY COLLECTED!
     <<FireflyIcon>>
+    <<PlayerFrezze>>
     <<set $FireflyFound to true>>
     <<FirSparkle>>
     <<FireflyCollected>>

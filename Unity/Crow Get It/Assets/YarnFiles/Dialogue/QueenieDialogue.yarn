@@ -3,6 +3,7 @@ position: -285,-670
 ---
 <<if $FlowerFound is false>>
     <<QueenieIcon>>
+    <<PlayerFrezze>>
     ?: Are you lost darling?
     ?: I dont get many visitors around here...
     Cawson: Just trying to help my friend Chip.
@@ -67,16 +68,19 @@ position: -128,214
     Queenie: Come back quickly now!
     <<FloSparkle>>
     <<QueenieIcon>>
+    <<PlayerFrezze>>
 ===
 
 title: GiveHoney
 position: -528,-427
 ---
     <<QueenieIcon>>
+    <<PlayerFrezze>>
     Queenie: Oh my DAYS!
     Queenie: You've actually found it!
     Queenie: Thank you sweetness, the honey is all yours!
     <<QueenieIcon>>
     <<QueenieQuestSwitch>>
+    <<PlayerFrezze>>
     <<set $EarntHoney to true>>
 ===

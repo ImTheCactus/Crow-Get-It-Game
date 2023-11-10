@@ -3,13 +3,17 @@ tags:
 ---
 <<if $FindingStraw is false>>
     <<HayIcon>>
+    <<PlayerFrezze>>
     This straw is really soft, I bet it would make good stuffing.
     <<HayIcon>>
+    <<PlayerFrezze>>
 <<else>>
     <<HayIcon>>
+    <<PlayerFrezze>>
     I can bring this back to the Scarecrow.
     STRAW COLLECTED!
     <<HayIcon>>
+    <<PlayerFrezze>>
     <<set $FoundStuffing to true>>
 
 <<endif>>

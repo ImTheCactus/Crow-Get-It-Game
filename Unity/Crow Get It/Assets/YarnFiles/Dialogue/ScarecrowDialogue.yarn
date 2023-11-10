@@ -3,6 +3,7 @@ tags:
 ---
 <<if visited("ScarecrowDialogue") is false>>
     <<ScarecrowIcon>>
+    <<PlayerFrezze>>
     Scarecrow: ... Hay-lo...
     Cawson: Are you okay?
     Scarecrow: n-no the farmer, he took me from my field...
@@ -32,6 +33,7 @@ title: ScarecrowOption1
     Scarecrow: Hay-lp me!
     Scarecrow: Hurry!
     <<ScarecrowIcon>>
+    <<PlayerFrezze>>
 
 
 <<else>>
@@ -44,10 +46,12 @@ title: ScarecrowOption2
 ---
 <<if $FoundButtons is false>>
     <<ScarecrowIcon>>
+    <<PlayerFrezze>>
     Scarecrow: Oh Thank you Crow.
     Cawson: Do you need anymore?
     Scarecrow: No thanks I'm stuffed!
     <<ScarecrowIcon>>
+    <<PlayerFrezze>>
     <<ScarecrowStrawSwitch>>
 
 
@@ -61,9 +65,11 @@ title: ScarecrowOption3
 ---
 <<if $FoundHat is false>>
     <<ScarecrowIcon>>
+    <<PlayerFrezze>>
     Scarecrow: Now that I have my eyes back I can see that you're as cute as... Well, my eyes!
     Cawson: *Cawson blushes*
     <<ScarecrowIcon>>
+    <<PlayerFrezze>>
     <<ScarecrowButtonSwitch>>
 
 
@@ -76,9 +82,11 @@ title: ScarecrowOption3
 title: ScarecrowOption4
 ---
     <<ScarecrowIcon>>
+    <<PlayerFrezze>>
     Scarecrow: You found my hat, now my head won't burn in the sun.
     Scarecrow: Hats off to ya!
         <<ScarecrowHatSwitch>>
+        <<PlayerFrezze>>
         <<jump AllItemsFound>>
 ===
 
@@ -86,6 +94,7 @@ title: AllItemsFound
 ---
 <<if $FoundStuffing and $FoundButtons and $FoundHat is true>>
     <<ScarecrowIconHappy>>
+    <<PlayerFrezze>>
     Scarecrow: Thanks crow you really are great, maybe even CAW-some. I can go and be outsanding in my field again!
 
 <<else>>
@@ -99,6 +108,7 @@ title: ScarecrowEnd
 ---
     Scarecrow: See you again soooon!
     <<ScarecrowIconHappy>>
+    <<PlayerFrezze>>
     
 
 ===
