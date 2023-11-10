@@ -2,10 +2,14 @@
 tags:
 ---
 <<if $FindingHat is false>>
+    <<HatIcon>>
     That's way too big for me, I wonder who it belongs to...
+    <<HatIcon>>
 <<else>>
+    <<HatIcon>>
     Maybe I can bring this back to the Scarecrow.
     HAT COLLECTED!
+    <<HatIcon>>
     <<set $FoundHat to true>>
     <<HatCollected>>
 

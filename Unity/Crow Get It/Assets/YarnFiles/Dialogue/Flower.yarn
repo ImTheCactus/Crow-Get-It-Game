@@ -2,10 +2,14 @@
 tags:
 ---
 <<if $FindingFlower is false>>
+    <<FlowerIcon>>
     Mmmm that smells nice and sweet!
+    <<FlowerIcon>>
 <<else>>
+    <<FlowerIcon>>
     This is what Queenie wanted!
     FLOWER COLLECTED!
+    <<FlowerIcon>>
     <<set $FlowerFound to true>>
     <<FloSparkle>>
     <<FlowerCollected>>

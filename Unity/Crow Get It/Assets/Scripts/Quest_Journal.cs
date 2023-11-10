@@ -25,6 +25,15 @@ public class Quest_Journal : MonoBehaviour
     public GameObject RaphIcon;
     public GameObject ScarecrowIcon;
     public GameObject ScarecrowIconHappy;
+    public GameObject PeachIcon;
+    public GameObject HoneyIcon;
+    public GameObject FlowerIcon;
+    public GameObject BerryIcon;
+    public GameObject UrchinIcon;
+    public GameObject FireflyIcon;
+    public GameObject HayIcon;
+    public GameObject ButtonIcon;
+    public GameObject HatIcon;
     
 
     public CustomYarnCommands customYarnCommands;
@@ -45,6 +54,17 @@ public class Quest_Journal : MonoBehaviour
     bool BubblesIconActive = false;
     bool RaphIconActive = false;
     bool ScarecrowIconActive = false;
+    bool ScarecrowIconHappyActive = false;
+    bool PeachIconActive = false;
+    bool HoneyIconActive = false;
+    bool FlowerIconActive = false;
+    bool BerryIconActive = false;
+    bool UrchinIconActive = false;
+    bool FireflyIconActive = false;
+    bool HayIconActive = false;
+    bool ButtonIconActive = false;
+    bool HatIconActive = false;
+    
 
     private bool isOpen;
 
@@ -61,6 +81,8 @@ public class Quest_Journal : MonoBehaviour
         ScarecrowStrawQuest.SetActive(false);
         ScarecrowButtonQuest.SetActive(false);
         ScarecrowHatQuest.SetActive(false);
+
+        //NPC icons
         MushIcon.SetActive(false);
         ChipIcon.SetActive(false);
         QueenieIcon.SetActive(false);
@@ -69,6 +91,17 @@ public class Quest_Journal : MonoBehaviour
         RaphIcon.SetActive(false);
         ScarecrowIcon.SetActive(false);
         ScarecrowIconHappy.SetActive(false);
+
+        //Item Icons
+        PeachIcon.SetActive(false);
+        HoneyIcon.SetActive(false);
+        FlowerIcon.SetActive(false);
+        BerryIcon.SetActive(false);
+        UrchinIcon.SetActive(false);
+        FireflyIcon.SetActive(false);
+        HayIcon.SetActive(false);
+        ButtonIcon.SetActive(false);
+        HatIcon.SetActive(false);
        
     }
 
@@ -264,6 +297,88 @@ public class Quest_Journal : MonoBehaviour
             ScarecrowIconHappy.SetActive(false);
         }
 
+        //This is Item Icon code
+        if  (customYarnCommands.PeachIconActive == true)
+        {
+            PeachIcon.SetActive(true);
+        }
+        else if (customYarnCommands.PeachIconActive == false)
+        {
+            PeachIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.HoneyIconActive == true)
+        {
+            HoneyIcon.SetActive(true);
+        }
+        else if (customYarnCommands.HoneyIconActive == false)
+        {
+            HoneyIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.FlowerIconActive == true)
+        {
+            FlowerIcon.SetActive(true);
+        }
+        else if (customYarnCommands.FlowerIconActive == false)
+        {
+            FlowerIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.BerryIconActive == true)
+        {
+            BerryIcon.SetActive(true);
+        }
+        else if (customYarnCommands.BerryIconActive == false)
+        {
+            BerryIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.UrchinIconActive == true)
+        {
+            UrchinIcon.SetActive(true);
+        }
+        else if (customYarnCommands.UrchinIconActive == false)
+        {
+            UrchinIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.FireflyIconActive == true)
+        {
+            FireflyIcon.SetActive(true);
+        }
+        else if (customYarnCommands.FireflyIconActive == false)
+        {
+            FireflyIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.HayIconActive == true)
+        {
+            HayIcon.SetActive(true);
+        }
+        else if (customYarnCommands.HayIconActive == false)
+        {
+            HayIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.ButtonIconActive == true)
+        {
+            ButtonIcon.SetActive(true);
+        }
+        else if (customYarnCommands.ButtonIconActive == false)
+        {
+            ButtonIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.HatIconActive == true)
+        {
+            HatIcon.SetActive(true);
+        }
+        else if (customYarnCommands.HatIconActive == false)
+        {
+            HatIcon.SetActive(false);
+        }
+        
     }
 
 }

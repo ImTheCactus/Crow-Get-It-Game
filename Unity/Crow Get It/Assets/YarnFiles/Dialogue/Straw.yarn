@@ -2,10 +2,14 @@
 tags:
 ---
 <<if $FindingStraw is false>>
+    <<HayIcon>>
     This straw is really soft, I bet it would make good stuffing.
+    <<HayIcon>>
 <<else>>
+    <<HayIcon>>
     I can bring this back to the Scarecrow.
     STRAW COLLECTED!
+    <<HayIcon>>
     <<set $FoundStuffing to true>>
 
 <<endif>>

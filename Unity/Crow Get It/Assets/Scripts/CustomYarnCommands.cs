@@ -21,6 +21,19 @@ public class CustomYarnCommands : MonoBehaviour
     public bool scarecrowButtonQuestActive = false;
     public bool scarecrowHatQuestActive = false;
 
+    //Item icon variables
+    public bool PeachIconActive = false;
+    public bool HoneyIconActive = false;
+    public bool FlowerIconActive = false;
+    public bool BerryIconActive = false;
+    public bool UrchinIconActive = false;
+    public bool FireflyIconActive = false;
+    public bool HayIconActive = false;
+    public bool ButtonIconActive = false;
+    public bool HatIconActive = false;
+
+
+
     //NPC dialogue image variables:
     [Header("NPC dialogue image")]
     public bool MushIconActive = false;
@@ -90,6 +103,19 @@ public class CustomYarnCommands : MonoBehaviour
         dialogueRunner.AddCommandHandler("RaphIcon", RaphIconSwitch);
         dialogueRunner.AddCommandHandler("ScarecrowIcon", ScarecrowIconSwitch);
         dialogueRunner.AddCommandHandler("ScarecrowHappyIcon", ScarecrowIconHappySwitch);
+
+        //Item Icons
+        dialogueRunner.AddCommandHandler("PeachIcon", PeachIconSwitch);
+        dialogueRunner.AddCommandHandler("HoneyIcon", HoneyIconSwitch);
+        dialogueRunner.AddCommandHandler("FlowerIcon", FlowerIconSwitch);
+        dialogueRunner.AddCommandHandler("BerryIcon", BerryIconSwitch);
+        dialogueRunner.AddCommandHandler("UrchinIcon", UrchinIconSwitch);
+        dialogueRunner.AddCommandHandler("FireflyIcon", FireflyIconSwitch);
+        dialogueRunner.AddCommandHandler("HayIcon", HayIconSwitch);
+        dialogueRunner.AddCommandHandler("ButtonIcon", ButtonIconSwitch);
+        dialogueRunner.AddCommandHandler("HatIcon", HatIconSwitch);
+    
+
         
         //NPCs exclamation sprite:
         dialogueRunner.AddCommandHandler("MExplenationSprite", MExplenationSpriteSwitch);
@@ -443,6 +469,108 @@ public class CustomYarnCommands : MonoBehaviour
             ScarecrowIconHappyActive = false;
         }
     }     
+
+
+    //item icons during item interaction
+            public void PeachIconSwitch()
+    {
+        if (PeachIconActive == false)
+        {
+            PeachIconActive = true;
+        }
+        else
+        {
+            PeachIconActive = false;
+        }
+    } 
+            public void HoneyIconSwitch()
+    {
+        if (HoneyIconActive == false)
+        {
+            HoneyIconActive = true;
+        }
+        else
+        {
+            HoneyIconActive = false;
+        }
+    } 
+            public void FlowerIconSwitch()
+    {
+        if (FlowerIconActive == false)
+        {
+            FlowerIconActive = true;
+        }
+        else
+        {
+            FlowerIconActive = false;
+        }
+    } 
+            public void BerryIconSwitch()
+    {
+        if (BerryIconActive == false)
+        {
+            BerryIconActive = true;
+        }
+        else
+        {
+            BerryIconActive = false;
+        }
+    } 
+            public void UrchinIconSwitch()
+    {
+        if (UrchinIconActive == false)
+        {
+            UrchinIconActive = true;
+        }
+        else
+        {
+            UrchinIconActive = false;
+        }
+    } 
+            public void FireflyIconSwitch()
+    {
+        if (FireflyIconActive == false)
+        {
+            FireflyIconActive = true;
+        }
+        else
+        {
+            FireflyIconActive = false;
+        }
+    } 
+            public void HayIconSwitch()
+    {
+        if (HayIconActive == false)
+        {
+            HayIconActive = true;
+        }
+        else
+        {
+            HayIconActive = false;
+        }
+    } 
+            public void ButtonIconSwitch()
+    {
+        if (ButtonIconActive == false)
+        {
+            ButtonIconActive = true;
+        }
+        else
+        {
+            ButtonIconActive = false;
+        }
+    } 
+            public void HatIconSwitch()
+    {
+        if (HatIconActive == false)
+        {
+            HatIconActive = true;
+        }
+        else
+        {
+            HatIconActive = false;
+        }
+    } 
 
     //NPCs: Mush's exclamation sprite visibility:
     public void MExplenationSpriteSwitch()
