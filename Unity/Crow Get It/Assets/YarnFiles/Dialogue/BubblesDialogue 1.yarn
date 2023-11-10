@@ -51,6 +51,7 @@ title: BubblesQuest
 title: BubblesUrchinFound
 ---
     Bubbles: You found one for me. Thankyou! *Blublub*
+    <<BubblesIcon>>
     <<BubblesQuestSwitch>>
     <<set $Parkour2 to true>>
 ===

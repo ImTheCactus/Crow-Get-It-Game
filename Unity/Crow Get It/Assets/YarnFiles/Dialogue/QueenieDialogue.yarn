@@ -41,7 +41,6 @@ position: -314,-191
     <<jump WhereFlower>>
 
 -> See you soon!
-    <<QueenieIcon>>
     <<jump EndQueenie>>
 
 ===
@@ -50,6 +49,7 @@ title: WhatFlower
 position: -582,47
 ---
     Queenie: It's a large flower, you'll know it when you see it.
+    <<QueenieIcon>>
 ===
 
 title: WhereFlower
@@ -58,6 +58,7 @@ position: -360,132
     Queenie: It should be around here somewhere. 
     Queenie: Perhaps in the meadow? 
     Queenie: A large open grassy space is perfect for flowers to bloom!
+    <<QueenieIcon>>
 ===
 
 title: EndQueenie
@@ -65,6 +66,7 @@ position: -128,214
 ---
     Queenie: Come back quickly now!
     <<FloSparkle>>
+    <<QueenieIcon>>
 ===
 
 title: GiveHoney

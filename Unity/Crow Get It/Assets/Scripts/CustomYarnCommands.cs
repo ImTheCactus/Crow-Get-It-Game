@@ -30,6 +30,7 @@ public class CustomYarnCommands : MonoBehaviour
     public bool BubblesIconActive = false;
     public bool RaphIconActive = false;
     public bool ScarecrowIconActive = false;
+    public bool ScarecrowIconHappyActive = false;
 
     //Quest items visibility variables:
     [Header("Quest item mesh visibility")]
@@ -88,6 +89,7 @@ public class CustomYarnCommands : MonoBehaviour
         dialogueRunner.AddCommandHandler("BubblesIcon", BubblesIconSwitch);
         dialogueRunner.AddCommandHandler("RaphIcon", RaphIconSwitch);
         dialogueRunner.AddCommandHandler("ScarecrowIcon", ScarecrowIconSwitch);
+        dialogueRunner.AddCommandHandler("ScarecrowhappyIcon", ScarecrowIconHappySwitch);
         
         //NPCs exclamation sprite:
         dialogueRunner.AddCommandHandler("MExplenationSprite", MExplenationSpriteSwitch);
@@ -428,7 +430,19 @@ public class CustomYarnCommands : MonoBehaviour
         {
             ScarecrowIconActive = false;
         }
-    }   
+    } 
+
+        public void ScarecrowIconHappySwitch()
+    {
+        if (ScarecrowIconHappyActive == false)
+        {
+            ScarecrowIconHappyActive = true;
+        }
+        else
+        {
+            ScarecrowIconHappyActive = false;
+        }
+    }     
 
     //NPCs: Mush's exclamation sprite visibility:
     public void MExplenationSpriteSwitch()

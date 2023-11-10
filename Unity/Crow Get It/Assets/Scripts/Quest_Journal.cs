@@ -24,6 +24,8 @@ public class Quest_Journal : MonoBehaviour
     public GameObject BubblesIcon;
     public GameObject RaphIcon;
     public GameObject ScarecrowIcon;
+    public GameObject ScarecrowIconHappy;
+    
 
     public CustomYarnCommands customYarnCommands;
 
@@ -66,6 +68,7 @@ public class Quest_Journal : MonoBehaviour
         BubblesIcon.SetActive(false);
         RaphIcon.SetActive(false);
         ScarecrowIcon.SetActive(false);
+        ScarecrowIconHappy.SetActive(false);
        
     }
 
@@ -250,6 +253,15 @@ public class Quest_Journal : MonoBehaviour
         else if (customYarnCommands.ScarecrowIconActive == false)
         {
             ScarecrowIcon.SetActive(false);
+        }
+
+        if  (customYarnCommands.ScarecrowIconHappyActive == true)
+        {
+            ScarecrowIconHappy.SetActive(true);
+        }
+        else if (customYarnCommands.ScarecrowIconHappyActive == false)
+        {
+            ScarecrowIconHappy.SetActive(false);
         }
 
     }
