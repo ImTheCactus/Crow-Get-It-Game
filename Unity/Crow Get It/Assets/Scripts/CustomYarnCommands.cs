@@ -89,7 +89,7 @@ public class CustomYarnCommands : MonoBehaviour
         dialogueRunner.AddCommandHandler("BubblesIcon", BubblesIconSwitch);
         dialogueRunner.AddCommandHandler("RaphIcon", RaphIconSwitch);
         dialogueRunner.AddCommandHandler("ScarecrowIcon", ScarecrowIconSwitch);
-        dialogueRunner.AddCommandHandler("ScarecrowhappyIcon", ScarecrowIconHappySwitch);
+        dialogueRunner.AddCommandHandler("ScarecrowHappyIcon", ScarecrowIconHappySwitch);
         
         //NPCs exclamation sprite:
         dialogueRunner.AddCommandHandler("MExplenationSprite", MExplenationSpriteSwitch);
