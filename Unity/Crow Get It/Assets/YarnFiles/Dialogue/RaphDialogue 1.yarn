@@ -46,7 +46,6 @@ position: -219,-230
         <<set $FindingFirefly to true>>
         <<RaphQuestSwitch>>
         <<RExplenationSprite>>
-        <<FriSparkle>>
         <<jump RaphEnd>>
     -> No I'm okay.
         <<jump RaphEnd>>
@@ -97,5 +96,6 @@ position: -354,6
 ---
     Get back soon!
     <<RaphIcon>>
+    <<FirSparkle>>
     
 ===
