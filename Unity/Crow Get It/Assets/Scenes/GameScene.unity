@@ -22666,6 +22666,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.040442944
       objectReference: {fileID: 0}
+    - target: {fileID: 1187914001582355893, guid: 0424f446ba8fc9043a1864cf4e1052f6,
+        type: 3}
+      propertyPath: sprintMulitplier
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1187914001582355895, guid: 0424f446ba8fc9043a1864cf4e1052f6,
         type: 3}
       propertyPath: m_RootOrder
