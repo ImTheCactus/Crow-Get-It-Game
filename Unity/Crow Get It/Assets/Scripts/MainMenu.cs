@@ -11,6 +11,12 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = true;
     }
     // Start is called before the first frame update
+    public void EnterCutscene ()
+    {
+        SceneManager.LoadScene("CutsceneWorld");
+        Cursor.visible = true;
+    }
+    
     public void PlayGame ()
     {
         SceneManager.LoadScene("GameScene");

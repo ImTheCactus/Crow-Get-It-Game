@@ -1109,7 +1109,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1778433357}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: EnterCutscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
