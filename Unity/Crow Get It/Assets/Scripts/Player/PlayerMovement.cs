@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     //Variables:
     [SerializeField] private float moveSpeed;
     [SerializeField] private float walkSpeed;
+    [SerializeField] private float sprintMulitplier;
     private Vector3 moveDirection;
     private Vector3 velocity;
     [SerializeField] private bool isGrounded;
@@ -42,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(Attack());
         }
+
+        
     }
 
     private void Move()
@@ -57,11 +60,20 @@ if (inDialogue == false)
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
 
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+
         moveDirection = new Vector3(moveX * moveSpeed, moveDirection.y, moveZ * moveSpeed);
 
         moveDirection = transform.TransformDirection(moveDirection);
 
         moveDirection *= walkSpeed;
+
+        if(isRunning)
+        {
+            moveDirection *= sprintMulitplier;
+        }
+
+
 
         //Enables movement according to local (camera) axis.
         //This chunk is only necessary for the PlayerNEW prefab and now PlayerOLD.
